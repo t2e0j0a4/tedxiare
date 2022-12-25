@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.themeBG {
+    background: linear-gradient(107.42deg, #EB0028 -81.14%, rgba(11, 11, 11, 0.872) 42.54%, rgba(11, 11, 11, 0.872) 50.02%, #EB0028 201.68%);
+}
+
+.tedThemeBG {
+    background-image: url('./Assets/TedThemeX.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.foooterBG {
+    background: linear-gradient(180deg, #0B0B0B 10.84%, #EB0028 239.16%);
+    mix-blend-mode: normal;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #EB0028;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0B0B0B;
+}
+
+@media only screen and (max-width : 768px) {
+    .navBG {
+        background-image: url('./Assets/nav-bg.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 @tailwind utilities;
