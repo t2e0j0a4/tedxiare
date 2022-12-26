@@ -12,6 +12,7 @@ import aboutbg from "../Assets/about-bg.svg"
 import theam from "../Assets/theamlogo.svg"
 import theam2 from "../Assets/theam-logo.svg"
 import "../index.css"
+import "./about.css"
 import Navbar from '../Components/Navbar'
 import { useEffect } from 'react'
 function About() {
@@ -94,7 +95,7 @@ function About() {
 
             </div>
           </div>
-          <p className='text-xl text-[#000000] tracking-wider leading-8 about-desc sm:mx-4'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
+          <p className='mx-2 text-xl text-[#000000] tracking-wider leading-8 about-desc sm:mx-4'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
           </p>
         </section>
       </div>
@@ -112,7 +113,7 @@ function About() {
         </div>
 
       </section>
-      <section className='home_theme_section w-100'>
+      <section className='home_theme_section w-100 pt-8'>
         {/* <img className='absolute z-0 h-50%' src={aboutbg} alt="" /> */}
         <div className='container flex sm:items-center flex-col w-100 z-10'>
           <h6 className='home_theme_heading text-center font-bold text-[#EB0028] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
@@ -170,12 +171,12 @@ function About() {
 
           <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="" photo={member} linkedin="" />
+            <Member name="John Doe" role="" photo={member} linkedin="" />
 
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="" photo={member} linkedin="" />
+            <Member name="John Doe" role="" photo={member} linkedin="" />
+            <Member name="John Doe" role="" photo={member} linkedin="" />
 
 
 
