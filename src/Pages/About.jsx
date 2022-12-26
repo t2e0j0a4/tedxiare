@@ -12,8 +12,11 @@ import aboutbg from "../Assets/about-bg.svg"
 import theam from "../Assets/theamlogo.svg"
 import theam2 from "../Assets/theam-logo.svg"
 import "../index.css"
+<<<<<<< HEAD
 import "./about.css"
 import Navbar from '../Components/Navbar'
+=======
+>>>>>>> 3bc3542be53919df5c70849312723eee263805aa
 import { useEffect } from 'react'
 function About() {
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Web"]
