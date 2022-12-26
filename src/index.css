@@ -1,42 +1,163 @@
 @tailwind base;
 @tailwind components;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@font-face {
+  font-family: myFont;
+  src: url("./Assets/gilroy2.ttf");
+}
+.desktop-image {
+  width: 100%;
+}
+.mobile-image {
+  width: 100%;
+}
+.map {
+  /* width: 60%; */
+  /* offset: 0px, 0px rgba(236, 16, 21, 0.13); */
+  box-shadow: 0px 0px 49px 7px rgba(236, 16, 21, 0.13);
+}
+.sponser-section {
+  overflow: hidden;
+}
+.scroll-track {
+  animation: scroll 40s linear infinite;
+}
+.scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(250px * 6));
+  }
+}
+.about_mot {
+  padding-top: 3%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+}
+.home_theme_section {
+  background-image: url("./Assets/about-bg.svg");
+  overflow-y: hidden;
+}
+.category {
+  border-bottom: 3px solid #d9d9d9;
+
+  /* font-size: 18.5px; */
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.occ2 {
+  background-color: aqua;
+}
+.team-flex::-webkit-scrollbar {
+  display: none;
+}
+.sponsers-scroll::-webkit-scrollbar {
+  display: none;
+}
+.home_theme_desc,
+.about-desc,
+.member-role,
+.member-name,
+.active,
+.category {
+  font-family: myFont;
+}
+/* .team-flex-border {
+  margin-top: -3px;
+  border-width: 3px;
+  border-top: none;
+  width: 80%;
+  margin-left: 100px;
+} */
+.active {
+  color: #dc2626;
+
+  border-bottom: 3px solid #dc2626;
+  user-select: none;
+
+  /* font-size: 19px; */
+  font-weight: 700;
+  cursor: pointer;
+  padding-right: 0;
+}
+.theam-section {
+  max-height: 860px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .category,
+  .active {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .category {
+    border-bottom: 3px solid #9f9f9f;
+  }
+}
+@media screen and (max-width: 423px) {
+  .categoryMembers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .themeBG {
-    background: linear-gradient(107.42deg, #EB0028 -81.14%, rgba(11, 11, 11, 0.872) 42.54%, rgba(11, 11, 11, 0.872) 50.02%, #EB0028 201.68%);
+  background: linear-gradient(
+    107.42deg,
+    #eb0028 -81.14%,
+    rgba(11, 11, 11, 0.872) 42.54%,
+    rgba(11, 11, 11, 0.872) 50.02%,
+    #eb0028 201.68%
+  );
 }
 
 .tedThemeBG {
     background-image: url('./Assets/TedThemeX.svg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 .foooterBG {
-    background: linear-gradient(180deg, #0B0B0B 10.84%, #EB0028 239.16%);
-    mix-blend-mode: normal;
+  background: linear-gradient(180deg, #0b0b0b 10.84%, #eb0028 239.16%);
+  mix-blend-mode: normal;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #EB0028;
-    border-radius: 2px;
+  background-color: #eb0028;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #0B0B0B;
+  background-color: #0b0b0b;
 }
 
-@media only screen and (max-width : 768px) {
-    .navBG {
-        background-image: url('./Assets/nav-bg.png');
-        background-size: cover;
-        background-position: center;
-    }
+@media only screen and (max-width: 768px) {
+  .navBG {
+    background-image: url("./Assets/nav-bg.png");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 @media only screen and (max-width : 450px) {
