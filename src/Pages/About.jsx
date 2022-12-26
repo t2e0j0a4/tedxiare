@@ -12,7 +12,6 @@ import aboutbg from "../Assets/about-bg.svg"
 import theam from "../Assets/theamlogo.svg"
 import theam2 from "../Assets/theam-logo.svg"
 import "../index.css"
-import Navbar from '../Components/Navbar'
 import { useEffect } from 'react'
 function About() {
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Web"]
