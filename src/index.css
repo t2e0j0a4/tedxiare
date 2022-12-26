@@ -10,7 +10,7 @@
 .tedThemeBG {
     background-image: url('./Assets/TedThemeX.svg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .foooterBG {
@@ -36,6 +36,45 @@
         background-image: url('./Assets/nav-bg.png');
         background-size: cover;
         background-position: center;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .gridSystem {
+        display: grid !important;
+        grid-template-columns: repeat(1,1fr) !important;
+        grid-template-rows: repeat(1,1fr) !important;
+    }
+
+    .speakerWidth {
+        width: 250px !important;
+        height: 360px !important;
+    }
+
+    .speakerImg {
+        height: 360px !important;
+    }
+
+    .tedThemePadding {
+        padding: auto 16px !important;
+    }
+}
+
+@media only screen and (max-width : 370px) { 
+    .speakerWidth {
+        width: 220px !important;
+        height: 320px !important;
+    }
+
+    .speakerImg {
+        height: 320px !important;
+    }
+}
+
+@media only screen and (max-width : 340px) {
+    .fontSizing {
+        font-size: 16px !important;
+        line-height: 24px !important;
     }
 }
 
