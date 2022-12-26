@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-<<<<<<< HEAD
-=======
+
 @import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 @font-face {
   font-family: myFont;
@@ -59,7 +58,7 @@
   font-weight: 700;
   color: black;
   cursor: pointer;
-  -webkit-user-select : none;
+  -webkit-user-select: none;
   user-select: none;
   padding-right: 10px;
   padding-left: 10px;
@@ -92,7 +91,7 @@
   color: #dc2626;
 
   border-bottom: 3px solid #dc2626;
-  -webkit-user-select : none;
+  -webkit-user-select: none;
   user-select: none;
 
   /* font-size: 19px; */
@@ -100,7 +99,6 @@
   cursor: pointer;
   padding-right: 0;
 }
->>>>>>> 3bc3542be53919df5c70849312723eee263805aa
 .theam-section {
   max-height: 860px;
   padding-bottom: 50px;
@@ -116,9 +114,9 @@
 }
 
 .tedThemeBG {
-    background-image: url('./Assets/TedThemeX.svg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("./Assets/TedThemeX.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .foooterBG {
@@ -147,43 +145,43 @@
   }
 }
 
-@media only screen and (max-width : 450px) {
-    .gridSystem {
-        display: grid !important;
-        grid-template-columns: repeat(1,1fr) !important;
-        grid-template-rows: repeat(1,1fr) !important;
-    }
+@media only screen and (max-width: 450px) {
+  .gridSystem {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(1, 1fr) !important;
+  }
 
-    .speakerWidth {
-        width: 250px !important;
-        height: 360px !important;
-    }
+  .speakerWidth {
+    width: 250px !important;
+    height: 360px !important;
+  }
 
-    .speakerImg {
-        height: 360px !important;
-    }
+  .speakerImg {
+    height: 360px !important;
+  }
 
-    .tedThemePadding {
-        padding: auto 16px !important;
-    }
+  .tedThemePadding {
+    padding: auto 16px !important;
+  }
 }
 
-@media only screen and (max-width : 370px) { 
-    .speakerWidth {
-        width: 220px !important;
-        height: 320px !important;
-    }
+@media only screen and (max-width: 370px) {
+  .speakerWidth {
+    width: 220px !important;
+    height: 320px !important;
+  }
 
-    .speakerImg {
-        height: 320px !important;
-    }
+  .speakerImg {
+    height: 320px !important;
+  }
 }
 
-@media only screen and (max-width : 340px) {
-    .fontSizing {
-        font-size: 16px !important;
-        line-height: 24px !important;
-    }
+@media only screen and (max-width: 340px) {
+  .fontSizing {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
 }
 
 @tailwind utilities;
