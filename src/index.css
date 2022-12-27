@@ -155,6 +155,7 @@ html {
         display: grid !important;
         grid-template-columns: repeat(1,1fr) !important;
         grid-template-rows: repeat(1,1fr) !important;
+        row-gap: 1.2rem !important;
     }
 
   .speakerWidth {
