@@ -89,7 +89,7 @@ const Home = () => {
         {/* FAQ */}
         <section className="w-[100%] h-[100%] bg-[#0B0B0B] py-8 gap-y-6 sm:gap-y-8 px-6">
             <div className="w-[100%] flex justify-center items-center text-center mb-6">
-                <h1 className='text-[32px] sm:text-[48px] text-center font-[600] leading-[48px] md:leading-[72px] text-[#EB0028]'>FREQUENTLY ASKED <span className='text-[#ffffff] tracking-wider'>QUESTIONS</span></h1>
+                <h1 className='text-[32px] sm:text-[48px] text-center font-[600] leading-[48px] md:leading-[72px] text-[#ffffff]'>FREQUENTLY ASKED <span className='text-[#EB0028] tracking-wider'>QUESTIONS</span></h1>
             </div>
             <div className="flex flex-col gap-y-4 items-center justify-center w-[100%]">
                 {
