@@ -7,6 +7,11 @@
   font-family: myFont;
   src: url("./Assets/gilroy2.ttf");
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .desktop-image {
   width: 100%;
 }
@@ -133,7 +138,7 @@
 .tedThemeBG {
     background-image: url('./Assets/TedThemeX.svg');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .foooterBG {
@@ -167,6 +172,7 @@
         display: grid !important;
         grid-template-columns: repeat(1,1fr) !important;
         grid-template-rows: repeat(1,1fr) !important;
+        row-gap: 1.4rem !important;
     }
 
     .speakerWidth {
