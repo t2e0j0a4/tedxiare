@@ -337,7 +337,7 @@ function About() {
 
         </div>
       </section>
-      <div className='container mx-auto mt-7'>
+      <div id='iaresitemap' className='container mx-auto mt-7'>
         <section className='my-14 flex flex-col justify-center items-center'>
           <h2 className='text-2xl font-bold sm:text-5xl text-center pb-3'>MEET US <span className='text-[#dc2626]'>HERE</span></h2>
           <iframe className='w-11/12 map mt-5 sm:w-10/12' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.059126454807!2d78.41553661408612!3d17.599926987951605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ecfe1af26dd%3A0x65666fa3c4a256d2!2sInstitute%20of%20Aeronautical%20Engineering!5e0!3m2!1sen!2sin!4v1669179277990!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

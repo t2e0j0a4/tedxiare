@@ -84,7 +84,7 @@ const Home = () => {
         </section>
 
         {/* EVENTS SCHEDULE - TIMETABLE */}
-        <section className='w-[100%] h-[100%] bg-[#ffffff]'></section>
+        {/* <section className='w-[100%] h-[100%] bg-[#ffffff]'></section> */}
 
         {/* FAQ */}
         <section className="w-[100%] h-[100%] bg-[#0B0B0B] py-8 gap-y-6 sm:gap-y-8 px-6">
