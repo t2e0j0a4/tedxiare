@@ -77,8 +77,8 @@ const Home = () => {
                 <div className="w-[94%] sm:w-[80%] md:w-[50%] px-6 py-6 flex justify-center items-center bg-[#EB0028] rounded-br-[6rem]">
                     <p className=' md:text-[32px] md:leading-[36px] lg:text-[36px] lg:leading-[42px] xl:text-[44px] xl:leading-[56px] w-[100%] text-[#ffffff] font-[600] font-[Poppins] tracking-wider'>Watch out this space for the schedule!</p>
                 </div>
-                <div className="w-[94%] md:w-[50%] flex justify-center items-center">
-                    <img src={Mic} alt="Mic" className='w-[70%]' />
+                <div className="w-[94%] md:w-[50%] h-[320px] scheduleImg sm:h-[450px] md:h-[330px] lg:h-[400px] xl:h-[400px] 2xl:h-[470px] flex justify-center items-center relative z-[0]">
+                    <img src={Mic} alt="Mic" className=' w-[80%] sm:w-[70%] absolute top-[10px] sm:top-[80px] md:top-[80px] lg:top-[20px] xl:top-[20px] 2xl:top-[0px] z-[0]' />
                 </div>
             </div>
         </section>
@@ -87,7 +87,7 @@ const Home = () => {
         {/* <section className='w-[100%] h-[100%] bg-[#ffffff]'></section> */}
 
         {/* FAQ */}
-        <section className="w-[100%] h-[100%] bg-[#0B0B0B] py-8 gap-y-6 sm:gap-y-8 px-6">
+        <section className="w-[100%] h-[100%] relative z-[10] bg-[#0B0B0B] py-8 gap-y-6 sm:gap-y-8 px-6">
             <div className="w-[100%] flex justify-center items-center text-center mb-6">
                 <h1 className='text-[32px] sm:text-[48px] text-center font-[600] leading-[48px] md:leading-[72px] text-[#ffffff]'>FREQUENTLY ASKED <span className='text-[#EB0028] tracking-wider'>QUESTIONS</span></h1>
             </div>
