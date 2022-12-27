@@ -65,6 +65,22 @@ const speakers = [
         twitter : 'twitter.com/profile',
         image : DummyPotrait
     },
+    {
+        id : 9,
+        name : 'John Doe',
+        role : 'VISUAL ARTIST, COMPOSER & DIRECTOR',
+        linkedin : 'linkedin.com/profile',
+        twitter : 'twitter.com/profile',
+        image : DummyPotrait
+    },
+    {
+        id : 10,
+        name : 'John Doe',
+        role : 'VISUAL ARTIST, COMPOSER & DIRECTOR',
+        linkedin : 'linkedin.com/profile',
+        twitter : 'twitter.com/profile',
+        image : DummyPotrait
+    },
 ]
 
 export default speakers;
