@@ -23,12 +23,7 @@ const questions = [
         id : 5,
         question : 'Is on spot registration available?',
         answer : 'No, there is no spot registrations for anyone.'
-    },
-    {
-        id : 6,
-        question : 'When will the registrations?',
-        answer : 'Most probably registrations will start by the end of december as the event will be conducted on 29th january, one month prior.'
-    },
+    }
 ]
 
 export default questions;
