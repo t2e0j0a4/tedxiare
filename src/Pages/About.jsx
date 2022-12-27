@@ -13,7 +13,7 @@ import theam from "../Assets/theamlogo.svg"
 import theam2 from "../Assets/theam-logo.svg"
 import "../index.css"
 
-import "./About.css"
+import "./about.css"
 import { useEffect } from 'react'
 function About() {
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Web"]
