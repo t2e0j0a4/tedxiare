@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import logo from "../Assets/logo.svg";
+import logo from "../Assets/tedxmainlogoedit.png";
 
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import {MdOutlineMail} from "react-icons/md";
@@ -15,8 +15,8 @@ const Footer = () => {
 
         <div className="flex flex-col w-[90%] lg:w-[auto] items-start justify-center gap-y-5">
           <div className="logo flex flex-col items-start justify-center my-0">
-              <img src={logo} alt="TedxIARE" className='w-[120px] my-0'/>
-              <span className='text-[16px] font-[600] text-[#EB0028] my-0'>x<span className='text-[#ffffff]'> = independently organized event</span> </span>
+              <img src={logo} className="w-[120px]" alt="TedxIARE"/>
+                <span className='mt-0 text-[12px] font-[600] text-[#EB0028]'>x<span className='text-[#ffffff]'> = independently organized event</span> </span>
           </div>
           <div className="flex flex-row gap-x-4">
             <a href="/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><FaLinkedinIn fontSize='16px'/></a>
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
 
         <div className="text-[18px] font-[500] leading-[24px] tracking-wider text-[#FFFFFF] font-[Poppins] w-[90%] lg:w-[40%]">
-          <p>TEDx IARE is a student organized TED event, with a noble intent of spreading wisdom through words.</p>
+          <p>TEDxIARE is an event organised by students at the Institute of Aeronautical Engineering that features an an array of engaging speakers geared towards sparking positive transformation.</p>
         </div>
 
         <div className="flex flex-row w-[90%] justify-start lg:w-[auto] gap-x-6 items-start lg:justify-center">
