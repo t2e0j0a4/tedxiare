@@ -1,20 +1,19 @@
 import React, { useState } from 'react'
-import TedText from "../Assets/ted-text.svg"
+// import TedText from "../Assets/ted-text.svg"
 import member from "../Assets/member.svg"
-import pastevent from "../Assets/past-event.svg"
+// import pastevent from "../Assets/past-event.svg"
 import desktop from "../Assets/desktop-image.svg"
 import mobile from "../Assets/Frame20.svg"
 // import theam from "../assets/themeimage.svg"
 import prev from "../Assets/prev.svg"
 import next from "../Assets/next.svg"
 import linkedin from "../Assets/linkedin.svg"
-import aboutbg from "../Assets/about-bg.svg"
+// import aboutbg from "../Assets/about-bg.svg"
 import theam from "../Assets/theamlogo.svg"
 import theam2 from "../Assets/theam-logo.svg"
 import "../index.css"
 
-import "./about.css"
-import Navbar from '../Components/Navbar'
+import "./About.css"
 import { useEffect } from 'react'
 function About() {
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Web"]
@@ -42,7 +41,7 @@ function About() {
       <>
         <div className>
           <div>
-            <img className='w-60% h-28 md:w-80% lg:h-52' src={props.photo} alt="team member photo" />
+            <img className='w-60% h-28 md:w-80% lg:h-52' src={props.photo} alt="team member" />
 
 
 
@@ -104,12 +103,12 @@ function About() {
         <div>
           <h3 className='text-2xl sm:text-4xl font-semibold mb-4 tracking-wide text-[#FFF] text-center'>OUR ESTEEMED <span className='text-[#EB0028]'>SPONSERS</span></h3>
           <div className='scroll-track ml-2 md:ml-9 flex gap-x-6 sm:ml-16 overflow-x-scroll justify-start overflow-y-hidden sponsers-scroll'>
-            <img className='sp' src={member} />
-            <img src={member} />
-            <img src={member} />
-            <img src={member} />
-            <img src={member} />
-            <img src={member} />
+            <img className='sp' src={member} alt="member"/>
+            <img src={member} alt="member"/>
+            <img src={member} alt="member"/>
+            <img src={member} alt="member"/>
+            <img src={member} alt="member"/>
+            <img src={member} alt="member"/>
           </div>
         </div>
 
@@ -119,9 +118,9 @@ function About() {
         <div className='container flex sm:items-center flex-col w-100 z-10'>
           <h6 className='home_theme_heading text-center font-bold text-[#EB0028] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
           {/* <img className='sm:w-7/12 pt-4' src={theam} alt="" /> */}
-          <div className='hidden flex -space-x-4 w-4/5 sm:block pt-5'>
+          <div className='flex -space-x-4 w-4/5 sm:block pt-5'>
 
-            <img className='w-full' src={theam} />
+            <img className='w-full' src={theam} alt="theme"/>
 
           </div>
           <div className='sm:hidden mt-4 text-center '>
@@ -129,7 +128,7 @@ function About() {
 
             <span className='text-3xl px-1 text-[#fff] bg-[#EB0028] tracking-widest'>NATURE <span className='text-[#000000]'>VS </span>NURTURE</span>
 
-            <img src={theam2} />
+            <img src={theam2} alt="theme2"/>
 
           </div>
 
@@ -157,8 +156,8 @@ function About() {
             }
           </div>
           <div className='flex justify-between mt-3 md:hidden'>
-            <button><img src={prev} onClick={prevButton} /></button>
-            <button><img src={next} onClick={nextButton} /></button>
+            <button><img src={prev} onClick={prevButton} alt="prev"/></button>
+            <button><img src={next} onClick={nextButton} alt="next"/></button>
 
           </div>
         </div>
@@ -343,7 +342,7 @@ function About() {
       <div id='iaresitemap' className='container mx-auto mt-7'>
         <section className='my-14 flex flex-col justify-center items-center'>
           <h2 className='text-2xl font-bold sm:text-5xl text-center pb-3'>MEET US <span className='text-[#dc2626]'>HERE</span></h2>
-          <iframe className='w-11/12 map mt-5 sm:w-10/12' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.059126454807!2d78.41553661408612!3d17.599926987951605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ecfe1af26dd%3A0x65666fa3c4a256d2!2sInstitute%20of%20Aeronautical%20Engineering!5e0!3m2!1sen!2sin!4v1669179277990!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title='iaresitemap' className='w-11/12 map mt-5 sm:w-10/12' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.059126454807!2d78.41553661408612!3d17.599926987951605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ecfe1af26dd%3A0x65666fa3c4a256d2!2sInstitute%20of%20Aeronautical%20Engineering!5e0!3m2!1sen!2sin!4v1669179277990!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
       </div>
     </>
