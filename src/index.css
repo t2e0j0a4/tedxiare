@@ -172,6 +172,16 @@ html {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .scheduleImg {
+    height: 280px !important;
+  }
+  .scheduleImg img {
+    top: 50px !important;
+  }
+}
+
+
 @media only screen and (max-width: 370px) {
   .speakerWidth {
     width: 220px !important;
