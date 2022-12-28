@@ -26,13 +26,32 @@ html {
 .sponser-section {
   overflow: hidden;
 }
-.scroll-track {
+/* .scroll-track {
   animation: scroll 40s linear infinite;
 }
 .scroll-track:hover {
   animation-play-state: paused;
+} */
+
+.newscroller {
+  animation: scrolltrack 12s ease-in-out infinite both;
+  transition: all 2s ease-in-out;
 }
 
+.newscroller:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrolltrack {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* 
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -40,7 +59,7 @@ html {
   100% {
     transform: translateX(calc(250px * 6));
   }
-}
+} */
 .about_mot {
   padding-top: 3%;
   font-family: "Poppins";

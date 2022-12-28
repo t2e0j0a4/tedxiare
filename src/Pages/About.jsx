@@ -1,21 +1,18 @@
-import React, { useState } from 'react'
-// import TedText from "../Assets/ted-text.svg"
-import member from "../Assets/member.svg"
-// import pastevent from "../Assets/past-event.svg"
-import desktop from "../Assets/desktop-image.svg"
-import mobile from "../Assets/Frame20.svg"
-// import theam from "../assets/themeimage.svg"
-import prev from "../Assets/prev.svg"
-import next from "../Assets/next.svg"
-import linkedin from "../Assets/linkedin.svg"
-// import aboutbg from "../Assets/about-bg.svg"
-import theam from "../Assets/theamlogo.svg"
-import theam2 from "../Assets/theam-logo.svg"
-import "../index.css"
+import React , {useEffect,useState} from 'react'
 
-import "./about.css"
-import { useEffect } from 'react'
-function About() {
+import desktopBG from "../Assets/desktop-image.svg";
+import mobileBG from "../Assets/Frame20.svg";
+import tedThemeX from "../Assets/TedThemeX.svg";
+import TedTheme from "../Assets/TedTheme2.svg";
+import NvN from "../Assets/ThemeNvN.svg";
+import trophy from "../Assets/trophy.svg";
+import member from "../Assets/member.svg";
+import linkedin from "../Assets/linkedin.svg";
+import prev from "../Assets/prev.svg";
+import next from "../Assets/next.svg";
+
+const About = () => {
+  
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Web"]
   const [active, setActive] = useState(0)
   const increament = () => setActive(active + 1)
@@ -66,83 +63,71 @@ function About() {
     console.log(active)
   }, [active])
 
+
+  useEffect(()=>{
+    document.title = 'Tedx IARE | About';
+  },[])
+
   return (
-    <>
-      {/* <Navbar /> */}
+    <div className='w-[100%] h-[100%]'>
 
-      <img className='desktop-image hidden md:block' src={desktop} alt="" />
-      <img className='mobile-image block md:hidden' src={mobile} alt="" />
+      {/* ABOUT US BANNER */}
+      <section className="w-[100%] h-[100%] flex justify-center items-center">
+        <img className='w-[100%] object-cover hidden sm:block' src={desktopBG} alt="About Us" />
+        <img className='w-[100%] object-cover sm:hidden block' src={mobileBG} alt="About Us" />
+      </section>
 
-      <div className='container mx-auto mt-9 mb-3'>
-        {/* <section className='space-x-2 sm:mx-2 space-y-3 mb-10'>
-          <span className='ml-2 text-2xl text-black  font-bold tracking-wide md:text-3xl'>What is<span className='text-2xl text-[#dc2626] font-bold md:text-3xl'> TED?</span></span>
-          <p className='font-medium tracking-wide text-md md:text-lg text-[#000000]'>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world’s leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman. Follow TED on Twitter <a href="http://twitter.com/TEDTalks">http://twitter.com/TEDTalks</a> or on Facebook at <a href="http://www.facebook.com/TED">http://www.facebook.com/TED</a> 
-          </p>
-          <br />
-          <span className='ml-2 text-2xl text-black font-bold tracking-wide md:text-3xl'>What is<span className='text-2xl text-[#dc2626] font-bold md:text-3xl'> TEDx?</span></span>
-          <p className='font-medium tracking-wide text-md md:text-lg text-[#000000]'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
-          </p> 
-          <img className='w-24 md:w-40' src={TedText} alt="TedX" />
-          <p className='font-medium tracking-wide text-md md:text-lg text-[#000000]'>Organised by curious individuals from the local community, TEDxAmsterdam features live speakers who seek to spark deep conversations and connections. TEDxAmsterdam is organised independently under license from TED.
-          </p>
-        </section> */}
-        <section>
-          <div className='flex flex-col items-center my-4'>
+      {/* ABOUT TEDx */}
+      <section className=" w-[94%] sm:w-[90%] mx-auto h-[100%] bg-[#ffffff] my-4 py-4 flex flex-col items-center justify-center gap-y-8 sm:gap-y-10 font-[Poppins]">
+            <div className="flex flex-col items-center justify-center gap-y-1 text-center">
+                <h1 className='text-[36px] text-center tracking-wider sm:text-[48px] font-[600] leading-[72px] text-[#0B0B0B]'>ABOUT <span className='text-[#EB0028]'>TED</span></h1>
+                <span className='bg-[#EB0028] text-[20px] sm:text-[22px] font-[600] leading-[32px] text-[#ffffff] px-[24px] py-[2px]'>Ideas worth spreading</span>
+            </div>
+            <div className="flex flex-col items-start justify-center gap-y-4">
+                <p className='font-[Poppins] font-[500] text-[20px] sm:text-[22px] text-[#0B0B0B] leading-[28px] sm:leading-[32px] fontSizing'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</p>
+            </div>
+        </section>
 
-            <h3 className='text-3xl sm:text-5xl font-semibold tracking-wide'>ABOUT <span className='text-[#EB0028]'>TEDX</span></h3>
-            <div>
-              <span className=' text-sm sm:text-lg px-2  text-[#fff] bg-[#EB0028] tracking-widest'>x = independently organized event</span>
-
+        {/* Our Estemed Sponsors */}
+        <section className="w-[100%] h-[100%] bg-[#0B0B0B] py-2">
+          <div className="w-[100%] flex justify-center items-center text-center">
+              <h1 className='text-[36px] sm:text-[48px] text-center font-[600] leading-[72px] text-[#EB0028]'>OUR ESTEEMED <span className='text-[#ffffff] tracking-wider'>SPONSORS</span></h1>
+          </div>
+          <div className='w-[90%] h-[100%] overflow-x-hidden mx-auto'>
+            <div className='w-[1460px] newscroller flex flex-row gap-x-8 py-4 my-4 items-center justify-start px-12'>
+              <img src={trophy} alt="Dummy" className='w-[200px]'/>
+              <img src={trophy} alt="Dummy" className='w-[200px]'/>
+              <img src={trophy} alt="Dummy" className='w-[200px]'/>
+              <img src={trophy} alt="Dummy" className='w-[200px]'/>
+              <img src={trophy} alt="Dummy" className='w-[200px]'/>
+              <img src={trophy} alt="Dummy" className='w-[200px]'/>
             </div>
           </div>
-          <p className='mx-2 text-xl text-[#000000] tracking-wider leading-8 about-desc sm:mx-4'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
-          </p>
         </section>
-      </div>
-      <section className='bg-[#0B0B0B] pt-10 pb-14 sponser-section'>
-        <div>
-          <h3 className='text-2xl sm:text-4xl font-semibold mb-4 tracking-wide text-[#FFF] text-center'>OUR ESTEEMED <span className='text-[#EB0028]'>SPONSERS</span></h3>
-          <div className='scroll-track ml-2 md:ml-9 flex gap-x-6 sm:ml-16 overflow-x-scroll justify-start overflow-y-hidden sponsers-scroll'>
-            <img className='sp' src={member} alt="member"/>
-            <img src={member} alt="member"/>
-            <img src={member} alt="member"/>
-            <img src={member} alt="member"/>
-            <img src={member} alt="member"/>
-            <img src={member} alt="member"/>
+
+        {/* THEME */}
+        <section className="w-[100%] h-[100%] themeBG py-6 relative">
+          <div className="bgX absolute w-[100%] h-[100%] flex items-center justify-center inset-0">
+            <img src={tedThemeX} alt="X" className='w-[80%] h-[80%]'/>
           </div>
-        </div>
-
-      </section>
-      <section className='home_theme_section w-100 pt-8'>
-        {/* <img className='absolute z-0 h-50%' src={aboutbg} alt="" /> */}
-        <div className='container flex sm:items-center flex-col w-100 z-10'>
-          <h6 className='home_theme_heading text-center font-bold text-[#EB0028] tracking-widest text-4xl'>T<span className='text-[#fff]'>HEME</span></h6>
-          {/* <img className='sm:w-7/12 pt-4' src={theam} alt="" /> */}
-          <div className='flex -space-x-4 w-4/5 sm:block pt-5'>
-
-            <img className='w-full' src={theam} alt="theme"/>
-
+          <div className="w-[100%] flex justify-center items-center text-center mb-6">
+              <h1 className='text-[36px] sm:text-[48px] text-center font-[600] leading-[72px] text-[#EB0028]'>T<span className='text-[#ffffff] tracking-wider'>HEME</span></h1>
           </div>
-          <div className='sm:hidden mt-4 text-center '>
-
-
-            <span className='text-3xl px-1 text-[#fff] bg-[#EB0028] tracking-widest'>NATURE <span className='text-[#000000]'>VS </span>NURTURE</span>
-
-            <img src={theam2} alt="theme2"/>
-
+          <div className="w-[100%] flex flex-col md:flex-row items-center md:items-start justify-center md:gap-y-0 gap-y-4">
+            <span className='font-[Poppins] md:text-[48px] lg:text-[64px] leading-[94px] tracking-[0.01em] text-[#ffffff] font-[500] hidden md:block'>NATURE</span>
+            <img src={NvN} alt="Nature vs Nurture"  className='block md:hidden w-[80%] mx-auto'/>
+            <img src={TedTheme} alt="Theme" className=' w-[70%]  md:w-[40%] lg:w-[30%]'/>
+            <span className='font-[Poppins] md:text-[48px] lg:text-[64px] leading-[94px] tracking-[0.01em] text-[#ffffff] font-[500] hidden md:block'>NURTURE</span>
           </div>
+          <div className="flex flex-col items-center justify-center gap-y-3 w-[90%] mx-auto my-4">
+            <p className='font-[Poppins] text-[18px] text-[#ffffff] text-center sm:text-[20px] md:text-[22px] font-[500] leading-[30px] tracking-wider'>How do you affect the world around you and how does the world around affect you? Our actions, behaviour, and decisions can have an impact on the people and environment around us. Whether it's choices we make in our personal lives or as a part of a larger community, we all have the power to shape the world in our small ways.</p>
+            <p className='font-[Poppins] text-[18px] text-[#ffffff] text-center sm:text-[20px] md:text-[22px] font-[500] leading-[30px] tracking-wider'>At the same time, the world around us also has a significant impact on us as individuals. The culture, politics, art, and society we live around impacts us in more ways than we realise. One could say that an individual is a battleground on which nature and nurture fight for dominance.</p>
+            <p className='font-[Poppins] text-[18px] text-[#ffffff] text-center sm:text-[20px] md:text-[22px] font-[500] leading-[30px] tracking-wider'>Join us at Tedx IARE to listen to perspectives from different walks of life</p>
+          </div>
+        </section>
 
-          <p className=' home_theme_desc font-medium tracking-wider w-full text-[#fff] font-Gilroy  sm:text-center leading-8 mt-2 lg:mt-10 lg:pb-20 lg:text-2xl sm:mt-5 sm:pb-8 text-center'>How do you affect the world around you and how does the world around affect you? Our actions, behaviour, and decisions can have an impact on the people and environment around us. Whether it's choices we make in our personal lives or as a part of a larger community, we all have the power to shape the world in our small ways.
-            <br />
-            At the same time, the world around us also has a significant impact on us as individuals. The culture, politics, art, and society we live around impacts us in more ways than we realise. One could say that an individual is a battleground on which nature and nurture fight for dominance.
-            <br />
-            <br />
-            Join us at Tedx IARE to listen to perspectives from different walks of life
-          </p>
-
-        </div>
-      </section>
-      <section className='px-3 lg:mx-9'>
+        {/* TEAM */}
+        <section className='px-3 lg:mx-9'>
         <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-bold tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
         <div>
           <div className='flex justify-start gap-y-3 team-flex md:justify-center mt-3 overflow-scroll'>
@@ -339,13 +324,18 @@ function About() {
 
         </div>
       </section>
-      <div id='iaresitemap' className='container mx-auto mt-7'>
-        <section className='my-14 flex flex-col justify-center items-center'>
-          <h2 className='text-2xl font-bold sm:text-5xl text-center pb-3'>MEET US <span className='text-[#dc2626]'>HERE</span></h2>
-          <iframe title='iaresitemap' className='w-11/12 map mt-5 sm:w-10/12' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.059126454807!2d78.41553661408612!3d17.599926987951605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ecfe1af26dd%3A0x65666fa3c4a256d2!2sInstitute%20of%20Aeronautical%20Engineering!5e0!3m2!1sen!2sin!4v1669179277990!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        {/* MEET US HERE */}
+        <section className='w-[100%] h-[100%] bg-[#ffffff] flex flex-col items-center justify-center my-4 py-4'>
+          <div className="flex flex-col items-center justify-center gap-y-1 text-center">
+              <h1 className='text-[36px] text-center tracking-wider sm:text-[48px] font-[600] leading-[72px] text-[#0B0B0B]'>MEET US <span className='text-[#EB0028]'>HERE</span></h1>
+          </div>
+          <div className="w-[100%] mx-auto">
+            <iframe title='iaresitemap' className=' w-[96%] sm:w-[90%] md:w-[84%] mx-auto' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.059126454807!2d78.41553661408612!3d17.599926987951605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ecfe1af26dd%3A0x65666fa3c4a256d2!2sInstitute%20of%20Aeronautical%20Engineering!5e0!3m2!1sen!2sin!4v1669179277990!5m2!1sen!2sin" width="600" height="450" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </section>
-      </div>
-    </>
+
+    </div>
   )
 }
 
