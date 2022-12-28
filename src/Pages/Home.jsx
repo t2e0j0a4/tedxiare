@@ -8,15 +8,22 @@ import TedTheme from "../Assets/TedTheme.svg";
 import Mic from "../Assets/SchedulesMic.svg";
 
 // Components & Data Imports
+// import Schedule from '../Components/Schedule';
 import Speaker from '../Components/Speaker';
 import FAQ from '../Components/FAQ';
 import speakers from '../Speakers';
 import questions from "../FAQ";
+// import schedule from "../Schedule.js";
 
 // Random Key ID
 import { v4 as uuidv4 } from 'uuid';
 
 const Home = () => {
+
+    React.useEffect(()=>{
+        document.title = "Tedx IARE | Home";
+    },[])
+
   return (
     <div className="w-[100%] h-[100%]">
         
@@ -84,7 +91,22 @@ const Home = () => {
         </section>
 
         {/* EVENTS SCHEDULE - TIMETABLE */}
-        {/* <section className='w-[100%] h-[100%] bg-[#ffffff]'></section> */}
+        {/* <section className='w-[100%] h-[100%] bg-[#ffffff] my-4'>
+            <div className="w-[100%] flex justify-center items-center text-center mb-6">
+                <h1 className='text-[32px] sm:text-[48px] text-center font-[600] leading-[48px] md:leading-[72px] text-[#0B0B0B]'>SCHEDULED <span className='text-[#EB0028] tracking-wider'>TALKS</span></h1>
+            </div>
+            <div className="timetableOuter w-[90%] h-[100%] mx-auto my-2 overflow-x-scroll">
+                <div className="timetableWrapper w-[2400px] h-[400px] flex flex-row items-start justify-start px-[2rem] sm:px-[4rem]">
+                    {
+                        schedule.map((scheduled)=>{
+                            return (
+                                <Schedule key={uuidv4()} {...scheduled}/>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </section> */}
 
         {/* FAQ */}
         <section className="w-[100%] h-[100%] relative z-[10] bg-[#0B0B0B] py-8 gap-y-6 sm:gap-y-8 px-6">
