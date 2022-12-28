@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 .scroll-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 .scroll-track:hover {
   animation-play-state: paused;
