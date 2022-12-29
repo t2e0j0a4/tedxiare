@@ -54,10 +54,8 @@
   font-weight: 700;
   color: black;
   cursor: pointer;
-  -webkit-user-select : none;
+  -webkit-user-select: none;
   user-select: none;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 .occ2 {
   background-color: aqua;
@@ -87,13 +85,12 @@
   color: #dc2626;
 
   border-bottom: 3px solid #dc2626;
-  -webkit-user-select : none;
+  -webkit-user-select: none;
   user-select: none;
 
   /* font-size: 19px; */
   font-weight: 700;
   cursor: pointer;
-  padding-right: 0;
 }
 .theam-section {
   max-height: 860px;
