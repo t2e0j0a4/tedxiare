@@ -93,9 +93,21 @@ const About = () => {
       {/* Our Estemed Sponsors */}
       <section className="w-[100%] h-[100%] bg-[#0B0B0B] py-6">
         <div className="w-[100%]">
-          <h1 className='text-[36px] sm:text-[48px] text-center font-[600] leading-[72px] text-[#ffff] '>OUR ESTEEMED <span className='text-[#EB0028] tracking-wider'>SPONSORS</span></h1>
+          <h1 className=' text-2xl  sm:text-5xl text-center mt-4 mb-4 font-bold tracking-wider text-[#ffff] '>OUR ESTEEMED <span className='text-[#EB0028] tracking-wider'>SPONSORS</span></h1>
+          {/* <h2 className=''>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2> */}
+
         </div>
-        <div className='w-[90%] h-[100%] overflow-x-hidden mx-auto'>
+        <div>
+          <div className='flex flex-col items-center space-y-6 mt-8 gap-x-5 pb-5'>
+            <a target="_blanck" href="https://www.almondhouse.com/">
+
+              <img src={sponser1} alt="Dummy" className='w-[200px]' />
+            </a>
+            <span className='bg-[#EB0028] text-[20px] sm:text-[22px] font-[600] leading-[32px] text-[#ffffff] px-[24px] py-[2px] tracking-wide'>TITLE SPONSOR</span>
+
+          </div>
+        </div>
+        {/* <div className='w-[90%] h-[100%] overflow-x-hidden mx-auto'>
           <div className='w-[1460px]  flex flex-row gap-x-8 py-4 my-4 items-center justify-center px-12'>
             <div className='flex flex-col items-center space-y-6'>
               <img src={sponser1} alt="Dummy" className='w-[200px]' />
@@ -104,7 +116,7 @@ const About = () => {
             </div>
 
           </div>
-        </div>
+        </div> */}
       </section>
 
         {/* THEME */}
@@ -131,12 +143,12 @@ const About = () => {
       {/* TEAM */}
       <section className='px-3 lg:mx-9'>
         <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-bold tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
-        <div>
-          <div className='flex  gap-y-3 team-flex sm:pl-5 mt-9 mb-5 overflow-scroll '>
+        <div className='mb-10'>
+          <div className='flex  gap-y-3 justify-center team-flex sm:pl-5 mt-9 mb-5 overflow-scroll '>
             {
               domains.map((e, index) => {
                 return <>
-                  <h6 onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6"}>{e}</h6>
+                  <h6 onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-10" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-10"}>{e}</h6>
 
                 </>
               })
@@ -150,7 +162,7 @@ const About = () => {
         </div>
 
         <div style={{ display: active === 0 ? "" : "none" }} className=''>
-          <div className='flex gap-y-4 md:ml-5 md:gap-y-5 xl:gap-y-6 sm:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -172,7 +184,7 @@ const About = () => {
 
         </div>
         <div style={{ display: active === 1 ? "" : "none" }} >
-          <div className='flex md:ml-5 md:gap-y-5 xl:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -193,7 +205,7 @@ const About = () => {
           </div>
         </div>
         <div style={{ display: active === 2 ? "" : "none" }} >
-          <div className='flex md:ml-5 md:gap-y-5 xl:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -215,7 +227,7 @@ const About = () => {
 
         </div>
         <div style={{ display: active === 3 ? "" : "none" }}>
-          <div className='flex md:ml-5 md:gap-y-5 xl:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -237,7 +249,7 @@ const About = () => {
 
         </div>
         <div style={{ display: active === 4 ? "" : "none" }}>
-          <div className='flex md:ml-5 md:gap-y-5 xl:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -259,7 +271,7 @@ const About = () => {
 
         </div>
         <div style={{ display: active === 5 ? "" : "none" }}>
-          <div className='flex md:ml-5 md:gap-y-5 xl:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -281,7 +293,7 @@ const About = () => {
 
         </div>
         <div style={{ display: active === 6 ? "" : "none" }} >
-          <div className='flex md:ml-5 md:gap-y-5 xl:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -304,7 +316,7 @@ const About = () => {
         </div>
         <div style={{ display: active === 7 ? "" : "none" }}>
 
-          <div className='flex md:ml-5 md:gap-y-5 xl:gap-y-6 space-x-3 mt-3' >
+          <div className='flex gap-x-8 md:ml-5' >
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
 
@@ -329,7 +341,7 @@ const About = () => {
 
       {/* MEET US HERE */}
       <section className='w-[100%] h-[100%] bg-[#ffffff] flex flex-col items-center justify-center my-4 py-4'>
-        <div className="flex flex-col items-center justify-center gap-y-1 text-center">
+        <div className="flex flex-col items-center justify-center gap-y-1 text-center mb-5">
           <h1 className='text-[36px] text-center tracking-wider sm:text-[48px] font-[600] leading-[72px] text-[#0B0B0B]'>MEET US <span className='text-[#EB0028]'>HERE</span></h1>
         </div>
         <div className="w-[100%] mx-auto">
