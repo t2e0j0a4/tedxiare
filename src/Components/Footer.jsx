@@ -27,7 +27,7 @@ const Footer = () => {
             <span className='mt-0 text-[12px] font-[600] text-[#EB0028]'>x<span className='text-[#ffffff]'> = independently organized event</span> </span>
           </div>
           <div className="flex flex-row gap-x-4">
-            <a target="_blank" href="https://www.instagram.com/tedx_iare/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><FaInstagram fontSize='20px' /></a>
+            <a href="https://www.instagram.com/tedx_iare/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><FaInstagram fontSize='20px' /></a>
             <a href="/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><MdOutlineMail fontSize='20px' /></a>
             {/* <a href="/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><FaTwitter fontSize='16px'/></a> */}
           </div>
