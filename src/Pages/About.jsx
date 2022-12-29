@@ -107,13 +107,13 @@ const About = () => {
 
         {/* THEME */}
         <section className="w-[100%] h-[100%] themeBG py-6 relative">
-          <div className="bgX absolute w-[100%] h-[100%] flex items-center justify-center inset-0">
-            <img src={tedThemeX} alt="X" className='w-[80%] h-[80%]'/>
+          <div className="bgX absolute w-[100%] h-[100%] flex items-center justify-center inset-0 z-[0]">
+            <img src={tedThemeX} alt="X" className='w-[80%] h-[80%] z-[0]'/>
           </div>
           <div className="w-[100%] flex justify-center items-center text-center mb-6">
               <h1 className='text-[36px] sm:text-[48px] text-center font-[600] leading-[72px] text-[#EB0028]'>T<span className='text-[#ffffff] tracking-wider'>HEME</span></h1>
           </div>
-          <div className="w-[100%] flex flex-col md:flex-row items-center md:items-start justify-center md:gap-y-0 gap-y-4">
+          <div className="w-[100%] flex flex-col md:flex-row items-center md:items-start justify-center md:gap-y-0 gap-y-4 z-10">
             <span className='font-[Poppins] md:text-[48px] lg:text-[64px] leading-[94px] tracking-[0.01em] text-[#ffffff] font-[500] hidden md:block'>NATURE</span>
             <img src={NvN} alt="Nature vs Nurture"  className='block md:hidden w-[80%] mx-auto'/>
             <img src={TedTheme} alt="Theme" className=' w-[70%]  md:w-[40%] lg:w-[30%]'/>

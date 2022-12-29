@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="text-[18px] font-[500] leading-[24px] tracking-wider text-[#FFFFFF] font-[Poppins] w-[90%] lg:w-[40%]">
+        <div className="text-[16px] font-[500] leading-[24px] tracking-wider text-[#FFFFFF] font-[Poppins] w-[90%] lg:w-[40%]">
           <p>TEDxIARE is an event organised by students at the Institute of Aeronautical Engineering that features an an array of engaging speakers geared towards sparking positive transformation.</p>
         </div>
 

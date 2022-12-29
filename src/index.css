@@ -128,13 +128,7 @@ html {
   padding-bottom: 50px;
 }
 .themeBG {
-  background: linear-gradient(
-    107.42deg,
-    #eb0028 -81.14%,
-    rgba(11, 11, 11, 0.872) 42.54%,
-    rgba(11, 11, 11, 0.872) 50.02%,
-    #eb0028 201.68%
-  );
+  background: linear-gradient(113.55deg, #55000E 0.63%, #0B0B0B 39.46%, #0B0B0B 55.69%, #55000E 97.63%);
 }
 
 .tedThemeBG {
@@ -214,10 +208,10 @@ html {
   }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 430px) {
   .fontSizing {
-    font-size: 16px !important;
-    line-height: 24px !important;
+    font-size: 15px !important;
+    line-height: 26px !important;
   }
 }
 
