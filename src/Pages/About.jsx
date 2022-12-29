@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
-import desktopBG from "../Assets/desktop-image.svg";
-import mobileBG from "../Assets/Frame20.svg";
+import desktopBG from "../Assets/about-desktop.png";
+import mobileBG from "../Assets/about-mobile.png";
 import tedThemeX from "../Assets/TedThemeX.svg";
 import TedTheme from "../Assets/TedTheme2.svg";
 import NvN from "../Assets/ThemeNvN.svg";
-import trophy from "../Assets/trophy.svg";
+// import trophy from "../Assets/trophy.svg";
 import member from "../Assets/member.svg";
 import linkedin from "../Assets/linkedin.svg";
 import prev from "../Assets/prev.svg";
