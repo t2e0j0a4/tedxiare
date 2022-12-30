@@ -116,12 +116,21 @@
   max-height: 860px;
   padding-bottom: 50px;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 350px) {
   .category,
   .active {
-    font-size: 16px;
+    font-size: 10px !important;
   }
 }
+
+@media screen and (max-width: 315px) {
+  .category,
+  .active {
+    font-size: 9px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .category {
     border-bottom: 3px solid #9f9f9f;

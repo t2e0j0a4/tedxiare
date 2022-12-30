@@ -7,8 +7,8 @@ import mobileBG from "../Assets/about-mobile.png";
 // import NvN from "../Assets/ThemeNvN.svg";
 // import trophy from "../Assets/trophy.svg";
 import linkedin from "../Assets/linkedin.svg";
-import prev from "../Assets/prev.svg";
-import next from "../Assets/next.svg";
+// import prev from "../Assets/prev.svg";
+// import next from "../Assets/next.svg";
 import sponser1 from "../Assets/sponser-1.svg";
 import abhishek from "../Assets/abhishek.png";
 import adarsh from "../Assets/adarsh.png";
@@ -35,38 +35,39 @@ import "./about.css"
 // Random Key ID
 import { v4 as uuidv4 } from 'uuid';
 
-
 const About = () => {
 
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography", "Web"]
-  const [active, setActive] = useState(0)
-  const increament = () => setActive(active + 1)
-  const decreament = () => setActive(active - 1)
+  const [active, setActive] = useState(0);
+
+  // const increament = () => setActive(active + 1)
+  // const decreament = () => setActive(active - 1)
+  
   const checkActive = (e) => {
-    setActive(e)
+    setActive(e);
   }
-  const prevButton = () => {
-    if (active > 0) {
-      decreament()
-    }
 
+  // const prevButton = () => {
+  //   if (active > 0) {
+  //     decreament()
+  //   }
+  // }
 
-  }
-  const nextButton = () => {
-    if (active < domains.length - 1) {
-      increament()
+  // const nextButton = () => {
+  //   if (active < domains.length - 1) {
+  //     increament()
+  //   }
+  // }
 
-    }
-  }
   const Member = (props) => {
     return (
       <>
-        <div className>
+        <div>
           <div>
             <img className='w-60% h-28 md:w-80% lg:h-52' src={props.photo} alt="team member" />
           </div>
           <div className='mt-2'>
-            <div className="flex md:space-x-1">
+            <div className="flex md:space-x-1 items-center justify-start">
               <h4 className='member-name text-md text-[#000000] font-semibold tracking-wider md:text-xl'>{props.name}</h4>
               <a href={props.linkedin} target="_blank" rel="noreferrer">
                 <img className='w-5 md:w-8 sm:w-6' src={linkedin} alt="linkedin" />
@@ -79,10 +80,6 @@ const About = () => {
       </>
     )
   }
-  useEffect(() => {
-    console.log(active)
-  }, [active])
-
 
   useEffect(() => {
     document.title = 'Tedx IARE | About';
@@ -160,9 +157,10 @@ const About = () => {
         </section> */}
 
       {/* TEAM */}
-      <section className='px-3  container'>
+      <section className='px-3 w-[100%] md:w-[95%] mx-auto'>
         <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-[600] tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
-        <div className='mb-10'>
+        
+        {/* <div className='mb-10'>
           <div className='flex vScroll gap-y-3 justify-center mt-9  mb-5 overflow-x-scroll pl-[160px] sm:pl-96 md:pl-40 lg:pl-10'>
             {
               domains.map((e, index) => {
@@ -178,152 +176,132 @@ const About = () => {
             <button><img src={next} onClick={nextButton} alt="next" /></button>
 
           </div>
+        </div> */}
+
+        <div className="my-8 mx-auto">
+          <div className="w-[100%] flex flex-row items-end justify-start lg:justify-center flex-wrap lg:flex-nowrap">
+            {
+              domains.map((domain,index)=>{
+                return (
+                  <>
+                    <h6 key={uuidv4()} onClick={()=>{checkActive(index)}} className={` text-[12px] md:text-[16px] py-2 text-center cursor-pointer ${active === index ? 'active' : 'category'} px-2 sm:px-4 md:px-6 xl:px-8`} >{domain}</h6>
+                  </>
+                )
+              })
+            }
+          </div>
         </div>
 
         <div style={{ display: active === 0 ? "" : "none" }} className=''>
-          <div className='flex gap-x-8 md:ml-5' >
+
+          <div className='flex gap-x-8 mx-1  md:mx-5' >
             <Member name="Sachin Pisipati" role="ORGANIZER" photo={sachin} linkedin="https://www.linkedin.com/in/sachin-pisipati-a93494210/" />
             <Member name="Akash Meka" role="CO-ORGANIZER" photo={akash} linkedin="https://www.linkedin.com/in/akash-meka-1a0861194" />
-
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
-
           </div> */}
 
         </div>
         <div style={{ display: active === 1 ? "" : "none" }} >
+
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Hutapriya L" role="HEAD" photo={priya} linkedin="https://www.linkedin.com/in/l-hutapriya-a64558239/" />
             <Member name="Gaurang R" role="CO-HEAD" photo={gaurang} linkedin="https://www.linkedin.com/in/gaurang-ratnaparkhi-599964232" />
-
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
+
         </div>
         <div style={{ display: active === 2 ? "" : "none" }} >
+
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Sneha V" role="HEAD" photo={sneha} linkedin="https://www.linkedin.com/in/sneha-vellelath-2b6759207" />
             <Member name="Mamtha P" role="CO-HEAD" photo={mamtha} linkedin="https://www.linkedin.com/in/mamtha-patalay/" />
-
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
 
         </div>
         <div style={{ display: active === 3 ? "" : "none" }}>
+
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="S Rajat Singh" role="HEAD" photo={rajat} linkedin="https://www.linkedin.com/in/rajat-singh-733362196/" />
             <Member name="Amuktha K" role="CO-HEAD" photo={amuktha} linkedin="https://www.linkedin.com/in/amuktha-kotamsetty-5814b9104/" />
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
 
         </div>
         <div style={{ display: active === 4 ? "" : "none" }}>
+
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Ruth Roshni" role="HEAD" photo={ruth} linkedin="https://www.linkedin.com/in/ruth-roshni-maramulla-a44314222" />
             <Member name="Niharika B" role="CO-HEAD" photo={niharika} linkedin="https://www.linkedin.com/in/niharika-buddaraju-95a165260/" />
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
 
         </div>
+
         <div style={{ display: active === 5 ? "" : "none" }}>
+
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Krishna Gopal" role="HEAD" photo={krishna} linkedin="" />
             <Member name="Abhishek K" role="CO-HEAD" photo={abhishek} linkedin="https://www.linkedin.com/in/abhishek-kokkonda-1361041b0" />
-
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
 
         </div>
+
         <div style={{ display: active === 6 ? "" : "none" }} >
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Adarsh Pandey" role="HEAD" photo={adarsh} linkedin="https://www.linkedin.com/in/adarsh-pandey-379a1b21a/" />
             <Member name="Manoj Sharma" role="CO-HEAD" photo={manoj} linkedin="https://www.linkedin.com/in/mvns-manoj-8148a21a5" />
-
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
 
         </div>
@@ -333,21 +311,14 @@ const About = () => {
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Hemanth V" role="HEAD" photo={vakati} linkedin="https://www.linkedin.com/in/hemanth-kumar-reddy-vakati-915115198/" />
             <Member name="Hemanth N" role="CO-HEAD" photo={naidu} linkedin="https://www.linkedin.com/in/hemanth-naidu-7b1b301a4/" />
-
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
 
         </div>
@@ -357,21 +328,14 @@ const About = () => {
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Rahul M" role="HEAD" photo={rahul} linkedin="https://www.linkedin.com/in/rahul-munamarthi" />
             <Member name="Vamsi Krishna" role="CO-HEAD" photo={vamsi} linkedin="https://www.linkedin.com/in/vamshi-krishna-978bb6207" />
-
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-
-
-
-
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
           </div> */}
 
         </div>
