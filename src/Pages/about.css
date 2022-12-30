@@ -65,13 +65,17 @@
 }
 
 /* Vertical */
-
+.vscroll {
+  display: flex;
+  /* overflow-x: hidden; */
+  /* max-height: 100px; */
+}
 .vert-scr {
   display: flex;
   overflow-x: scroll;
 }
 
-.vert-scr::-webkit-scrollbar {
+.vScroll::-webkit-scrollbar {
   height: 0;
 }
 
