@@ -64,10 +64,10 @@ const About = () => {
       <>
         <div>
           <div>
-            <img className='w-60% h-28 md:w-80% lg:h-52' src={props.photo} alt="team member" />
+            <img className=' w-[100px] sm:w-[120px] h-[125px] sm:h-[150px] md:w-[160px] md:h-[190px]' src={props.photo} alt="team member" />
           </div>
           <div className='mt-2'>
-            <div className="flex md:space-x-1 items-center justify-start">
+            <div className="flex gap-x-1 md:gap-x-2 w-[100%] items-center justify-start flex-wrap">
               <h4 className='member-name text-md text-[#000000] font-semibold tracking-wider md:text-xl'>{props.name}</h4>
               <a href={props.linkedin} target="_blank" rel="noreferrer">
                 <img className='w-5 md:w-8 sm:w-6' src={linkedin} alt="linkedin" />

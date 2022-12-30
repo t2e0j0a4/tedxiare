@@ -120,16 +120,17 @@
 @media screen and (max-width: 350px) {
   .category,
   .active {
-    font-size: 11.8px !important;
+    font-size: 10px !important;
+    padding: 6px !important;
   }
 }
 
-@media screen and (max-width: 315px) {
+/* @media screen and (max-width: 315px) {
   .category,
   .active {
     font-size: 11.5px !important;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   .category {
