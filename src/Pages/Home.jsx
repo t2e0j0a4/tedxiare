@@ -27,7 +27,7 @@ const Home = () => {
     },[])
 
   return (
-    <div className="w-[100%] h-[100%]">
+    <div id='Home-TOP' className="w-[100%] h-[100%]">
         
         {/* BG VIDEO */}
         <section className="relative w-[100%] h-[100vh]">

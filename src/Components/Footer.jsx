@@ -9,10 +9,7 @@ import { MdOutlineMail } from "react-icons/md";
 const Footer = () => {
 
   const moveToTop = () => {
-    window.addEventListener('scroll', () => {
-      window.scrollY = 0;
-      console.log(window.screenY);
-    })
+    window.scrollTo({top : 0 , behavior : 'smooth'});
   }
 
   return (
@@ -29,7 +26,6 @@ const Footer = () => {
           <div className="flex flex-row gap-x-4">
             <a href="https://www.instagram.com/tedx_iare/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><FaInstagram fontSize='20px' /></a>
             <a href="/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><MdOutlineMail fontSize='20px' /></a>
-            {/* <a href="/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><FaTwitter fontSize='16px'/></a> */}
           </div>
         </div>
 
@@ -40,8 +36,8 @@ const Footer = () => {
         <div className="flex flex-row w-[90%] justify-start lg:w-[auto] gap-x-6 items-start lg:justify-center">
           <ul className='flex flex-col items-start justify-center gap-y-2'>
             <li className='text-[#EB0028] font-[700] font-[Poppins] text-[16px] cursor-pointer'><Link to="/about#iaresitemap">Site map</Link></li>
-            <li onClick={() => { moveToTop() }} className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'><Link to="/">Home</Link></li>
-            <li onClick={() => { moveToTop() }} className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'><Link to="/about">About</Link></li>
+            <li onClick={()=>{moveToTop()}} className='text-[#ffffff] cursor-pointer font-[500] font-[Poppins] text-[16px]'><Link to='/'>Home</Link></li>
+            <li onClick={()=>{moveToTop()}} className='text-[#ffffff] cursor-pointer font-[500] font-[Poppins] text-[16px]'><Link to='/about'>About</Link></li>
             <li className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'><a target="_blank" rel="noreferrer" href="https://docs.google.com/forms/d/1arFlz1XgGeEpTj1ykSjIoagUoSCW0ExX_Nvoz6FNhuY/viewform?edit_requested=true">Register</a></li>
           </ul>
           <ul className='flex flex-col items-start justify-center gap-y-2'>

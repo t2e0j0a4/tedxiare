@@ -29,7 +29,13 @@ import vakati from "../Assets/vakati.png";
 import vamsi from "../Assets/vamsi.png";
 import niharika from "../Assets/Niharika.png";
 
+// CSS
 import "./about.css"
+
+// Random Key ID
+import { v4 as uuidv4 } from 'uuid';
+
+
 const About = () => {
 
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography" , "Web"]
@@ -83,7 +89,7 @@ const About = () => {
   }, [])
 
   return (
-    <div className='w-[100%] h-[100%]'>
+    <div id='About-TOP' className='w-[100%] h-[100%]'>
 
       {/* ABOUT US BANNER */}
       <section className="w-[100%] h-[100%] flex justify-center items-center">
@@ -162,7 +168,7 @@ const About = () => {
               domains.map((e, index) => {
                 return (
                 <>
-                  <h6 onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4"}>{e}</h6>
+                  <h6 key={uuidv4()} onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4"}>{e}</h6>
                 </>
                 )})
             }
@@ -377,7 +383,7 @@ const About = () => {
           <h1 className='text-[36px] text-center tracking-wider sm:text-[48px] font-[600] leading-[72px] text-[#0B0B0B]'>MEET US <span className='text-[#EB0028]'>HERE</span></h1>
         </div>
         <div className="w-[100%] mx-auto">
-          <iframe title='iaresitemap' className=' w-[96%] sm:w-[90%] md:w-[84%] mx-auto' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.059126454807!2d78.41553661408612!3d17.599926987951605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ecfe1af26dd%3A0x65666fa3c4a256d2!2sInstitute%20of%20Aeronautical%20Engineering!5e0!3m2!1sen!2sin!4v1669179277990!5m2!1sen!2sin" width="600" height="450" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title='iaresitemap' className=' w-[96%] sm:w-[90%] md:w-[84%] mx-auto' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.059126454807!2d78.41553661408612!3d17.599926987951605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ecfe1af26dd%3A0x65666fa3c4a256d2!2sInstitute%20of%20Aeronautical%20Engineering!5e0!3m2!1sen!2sin!4v1669179277990!5m2!1sen!2sin" width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
 
