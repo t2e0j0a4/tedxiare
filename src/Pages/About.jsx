@@ -38,7 +38,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const About = () => {
 
-  const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography" , "Web"]
+  const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography", "Web"]
   const [active, setActive] = useState(0)
   const increament = () => setActive(active + 1)
   const decreament = () => setActive(active - 1)
@@ -138,8 +138,8 @@ const About = () => {
         </div> */}
       </section>
 
-        {/* THEME */}
-        {/* <section className="w-[100%] h-[100%] themeBG py-6 relative">
+      {/* THEME */}
+      {/* <section className="w-[100%] h-[100%] themeBG py-6 relative">
           <div className="bgX absolute w-[100%] h-[100%] flex items-center justify-center inset-0">
             <img src={tedThemeX} alt="X" className='w-[80%] h-[80%]'/>
           </div>
@@ -160,10 +160,10 @@ const About = () => {
         </section> */}
 
       {/* TEAM */}
-      <section className='px-3 lg:mx-9'>
+      <section className='px-3  container'>
         <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-[600] tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
         <div className='mb-10'>
-          <div className='flex gap-y-3 justify-center sm:pl-5 mt-9 mb-5 overflow-x-scroll vert-scr'>
+          <div className='flex vScroll gap-y-3 justify-center mt-9  mb-5 overflow-x-scroll pl-[160px] sm:pl-96 md:pl-40 lg:pl-10'>
             {
               domains.map((e, index) => {
                 return (
@@ -327,7 +327,7 @@ const About = () => {
           </div> */}
 
         </div>
-        
+
         <div style={{ display: active === 8 ? "" : "none" }}>
 
           <div className='flex gap-x-8 md:ml-5' >
