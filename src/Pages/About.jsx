@@ -11,6 +11,22 @@ import linkedin from "../Assets/linkedin.svg";
 import prev from "../Assets/prev.svg";
 import next from "../Assets/next.svg";
 import sponser1 from "../Assets/sponser-1.svg";
+import abhishek from "../Assets/abhishek.png";
+import adarsh from "../Assets/adarsh.png";
+import akash from "../Assets/akash.png";
+import amuktha from "../Assets/amuktha.png";
+import gaurang from "../Assets/gaurang.png";
+import krishna from "../Assets/krishna.png";
+import mamtha from "../Assets/mamtha.png";
+import manoj from "../Assets/manoj.png";
+import naidu from "../Assets/naidu.png";
+import priya from "../Assets/priya.png";
+import rahul from "../Assets/rahul.png";
+import rajat from "../Assets/rajat.png";
+import sachin from "../Assets/sachin.png";
+import sneha from "../Assets/sneha.png";
+import vakati from "../Assets/vakati.png";
+import vamsi from "../Assets/vamsi.png";
 
 import "./about.css"
 const About = () => {
@@ -120,7 +136,7 @@ const About = () => {
       </section>
 
         {/* THEME */}
-        <section className="w-[100%] h-[100%] themeBG py-6 relative">
+        {/* <section className="w-[100%] h-[100%] themeBG py-6 relative">
           <div className="bgX absolute w-[100%] h-[100%] flex items-center justify-center inset-0">
             <img src={tedThemeX} alt="X" className='w-[80%] h-[80%]'/>
           </div>
@@ -138,7 +154,7 @@ const About = () => {
             <p className='font-[Poppins] text-[18px] text-[#ffffff] text-center sm:text-[20px] md:text-[22px] font-[500] leading-[30px] tracking-wider'>At the same time, the world around us also has a significant impact on us as individuals. The culture, politics, art, and society we live around impacts us in more ways than we realise. One could say that an individual is a battleground on which nature and nurture fight for dominance.</p>
             <p className='font-[Poppins] text-[18px] text-[#ffffff] text-center sm:text-[20px] md:text-[22px] font-[500] leading-[30px] tracking-wider'>Join us at Tedx IARE to listen to perspectives from different walks of life</p>
           </div>
-        </section>
+        </section> */}
 
       {/* TEAM */}
       <section className='px-3 lg:mx-9'>
@@ -163,12 +179,12 @@ const About = () => {
 
         <div style={{ display: active === 0 ? "" : "none" }} className=''>
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="Sachin Pisipati" role="ORGANIZER" photo={sachin} linkedin="https://www.linkedin.com/in/sachin-pisipati-a93494210/" />
+            <Member name="Akash Meka" role="CO-ORGANIZER" photo={akash} linkedin="https://www.linkedin.com/in/sachin-pisipati-a93494210/" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
@@ -180,17 +196,17 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
 
         </div>
         <div style={{ display: active === 1 ? "" : "none" }} >
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="Hutapriya L" role="HEAD" photo={priya} linkedin="" />
+            <Member name="Gaurang R" role="CO-HEAD" photo={gaurang} linkedin="" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
@@ -202,16 +218,16 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
         </div>
         <div style={{ display: active === 2 ? "" : "none" }} >
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="Sneha V" role="HEAD" photo={sneha} linkedin="" />
+            <Member name="Mamtha P" role="CO-HEAD" photo={mamtha} linkedin="" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
@@ -223,17 +239,17 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
 
         </div>
         <div style={{ display: active === 3 ? "" : "none" }}>
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="S Rajat Singh" role="HEAD" photo={rajat} linkedin="" />
+            <Member name="Amuktha K" role="CO-HEAD" photo={amuktha} linkedin="" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
@@ -245,17 +261,17 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
 
         </div>
         <div style={{ display: active === 4 ? "" : "none" }}>
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="Ruth Roshni" role="HEAD" photo={member} linkedin="" />
+            <Member name="Niharika B" role="CO-HEAD" photo={member} linkedin="" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
@@ -267,17 +283,17 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
 
         </div>
         <div style={{ display: active === 5 ? "" : "none" }}>
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="Krishna Gopal" role="HEAD" photo={krishna} linkedin="" />
+            <Member name="Abhishek K" role="CO-HEAD" photo={abhishek} linkedin="" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
@@ -289,17 +305,17 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
 
         </div>
         <div style={{ display: active === 6 ? "" : "none" }} >
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="Adarsh Pandey" role="HEAD" photo={adarsh} linkedin="https://www.linkedin.com/in/adarsh-pandey-379a1b21a/" />
+            <Member name="Manoj Sharma" role="CO-HEAD" photo={manoj} linkedin="" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
@@ -311,18 +327,19 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
 
         </div>
+        
         <div style={{ display: active === 7 ? "" : "none" }}>
 
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="Hemanth V" role="HEAD" photo={vakati} linkedin="https://www.linkedin.com/in/hemanth-kumar-reddy-vakati-915115198/" />
+            <Member name="Hemanth N" role="CO-HEAD" photo={naidu} linkedin="https://www.linkedin.com/in/hemanth-naidu-7b1b301a4/" />
 
           </div>
 
-          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
 
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
             <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
@@ -334,7 +351,7 @@ const About = () => {
 
 
 
-          </div>
+          </div> */}
 
         </div>
       </section>
