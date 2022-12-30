@@ -61,8 +61,24 @@
   background-color: aqua;
 }
 .team-flex::-webkit-scrollbar {
-  display: none;
+  height: 3px !important;
 }
+
+/* Vertical */
+
+.vert-scr {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.vert-scr::-webkit-scrollbar {
+  height: 0;
+}
+
+.team-flex::-webkit-scrollbar-track {
+  background-color: #9f9f9f;
+}
+
 .sponsers-scroll::-webkit-scrollbar {
   display: none;
 }

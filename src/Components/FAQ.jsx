@@ -8,7 +8,7 @@ const FAQ = (props) => {
     const [showInfo, setShowInfo] = useState(false);
 
     return (
-        <div className="question-box w-[98%] md:w-[84%] lg:w-[72%] bg-[#ffffff] border-b-[6px] rounded-[8px] border-[#EB0028] py-3 cursor-pointer" onClick={() => {
+        <div className="question-box w-[99%] md:w-[84%] lg:w-[72%] bg-[#ffffff] border-b-[6px] rounded-[8px] border-[#EB0028] py-3 cursor-pointer" onClick={() => {
           setShowInfo(!showInfo);
         }}>
           <div className="question-section flex items-center justify-between px-6 my-2 gap-x-7">

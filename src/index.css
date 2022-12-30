@@ -91,7 +91,10 @@ html {
   background-color: aqua;
 }
 .team-flex::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+  /* visibility: hidden !important; */
+  height: 1px !important;
+  width: 1px !important;
 }
 .sponsers-scroll::-webkit-scrollbar {
   display: none;

@@ -69,7 +69,7 @@ const Home = () => {
             <div className="w-[100%] flex justify-center items-center text-center mb-6">
                 <h1 className='text-[36px] sm:text-[48px] text-center font-[600] leading-[72px] text-[#EB0028]'>S<span className='text-[#ffffff] tracking-wider'>PEAKERS</span></h1>
             </div>
-            <div className=" w-[94%] sm:w-[90%] mx-auto grid grid-cols-2 grid-rows-4 lg:grid-cols-3 xl:grid-cols-4 gap-x-1 gap-y-5 sm:gap-x-4 sm:gap-y-6 lg:grid-rows-3 xl:grid-rows-2 mt-8 gridSystem">
+            <div className=" w-[94%] sm:w-[90%] mx-auto grid ">
                 {
                     speakers.map((speaker)=>{
                         return (
@@ -131,3 +131,6 @@ const Home = () => {
 }
 
 export default Home
+
+
+// grid-cols-2 grid-rows-4 lg:grid-cols-3 xl:grid-cols-4 gap-x-1 gap-y-5 sm:gap-x-4 sm:gap-y-6 lg:grid-rows-3 xl:grid-rows-2 mt-8 gridSystem

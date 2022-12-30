@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react'
 
 import desktopBG from "../Assets/about-desktop.png";
 import mobileBG from "../Assets/about-mobile.png";
-import tedThemeX from "../Assets/TedThemeX.svg";
-import TedTheme from "../Assets/TedTheme2.svg";
-import NvN from "../Assets/ThemeNvN.svg";
+// import tedThemeX from "../Assets/TedThemeX.svg";
+// import TedTheme from "../Assets/TedTheme2.svg";
+// import NvN from "../Assets/ThemeNvN.svg";
 // import trophy from "../Assets/trophy.svg";
-import member from "../Assets/member.svg";
 import linkedin from "../Assets/linkedin.svg";
 import prev from "../Assets/prev.svg";
 import next from "../Assets/next.svg";
@@ -22,16 +21,18 @@ import manoj from "../Assets/manoj.png";
 import naidu from "../Assets/naidu.png";
 import priya from "../Assets/priya.png";
 import rahul from "../Assets/rahul.png";
+import ruth from "../Assets/Ruth.png";
 import rajat from "../Assets/rajat.png";
 import sachin from "../Assets/sachin.png";
 import sneha from "../Assets/sneha.png";
 import vakati from "../Assets/vakati.png";
 import vamsi from "../Assets/vamsi.png";
+import niharika from "../Assets/Niharika.png";
 
 import "./about.css"
 const About = () => {
 
-  const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Web"]
+  const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography" , "Web"]
   const [active, setActive] = useState(0)
   const increament = () => setActive(active + 1)
   const decreament = () => setActive(active - 1)
@@ -57,17 +58,12 @@ const About = () => {
         <div className>
           <div>
             <img className='w-60% h-28 md:w-80% lg:h-52' src={props.photo} alt="team member" />
-
-
-
-
           </div>
           <div className='mt-2'>
             <div className="flex md:space-x-1">
-
               <h4 className='member-name text-md text-[#000000] font-semibold tracking-wider md:text-xl'>{props.name}</h4>
-              <a href={props.linkedin}>
-                <img className='w-5 md:w-8 sm:w-6' src={linkedin} alt="" />
+              <a href={props.linkedin} target="_blank" rel="noreferrer">
+                <img className='w-5 md:w-8 sm:w-6' src={linkedin} alt="linkedin" />
               </a>
             </div>
             <h5 className='member-role text-xs text-[#EB0028] tracking-wider font-semibold md:text-xs'>{props.role}</h5>
@@ -98,18 +94,19 @@ const About = () => {
       {/* ABOUT TEDx */}
       <section className=" w-[94%] sm:w-[90%] mx-auto h-[100%] bg-[#ffffff] my-4 py-4 flex flex-col items-center justify-center gap-y-8 sm:gap-y-10 font-[Poppins]">
         <div className="flex flex-col items-center justify-center gap-y-1 text-center">
-          <h1 className='text-[36px] text-center tracking-wider sm:text-[48px] font-[600] leading-[72px] text-[#0B0B0B]'>ABOUT <span className='text-[#EB0028]'>TED</span></h1>
+          <h1 className='text-[36px] text-center tracking-wider sm:text-[48px] font-[600] leading-[72px] text-[#0B0B0B]'>ABOUT <span className='text-[#EB0028]'>TEDx</span><span className='text-[#0B0B0B] '>IARE</span></h1>
           <span className='bg-[#EB0028] text-[20px] sm:text-[22px] font-[600] leading-[32px] text-[#ffffff] px-[24px] py-[2px]'>Ideas worth spreading</span>
         </div>
-        <div className="flex flex-col items-start justify-center gap-y-4">
+        <div className="flex flex-col items-start justify-center gap-y-5">
           <p className='font-[Poppins] font-[500] text-[20px] sm:text-[22px] text-[#0B0B0B] leading-[28px] sm:leading-[32px] fontSizing'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</p>
+          <p className='font-[Poppins] font-[500] text-[20px] sm:text-[22px] text-[#0B0B0B] leading-[28px] sm:leading-[32px] fontSizing'><span className='text-[#EB0028] font-[600] text-[24px]'>TEDx<span className='text-[#0B0B0B] font-[600] text-[24px]'>IARE</span></span> is a localised TED event organised by our team on the theme 'Nature vs Nurture', where we try to understand the various influences upon a person's life, as well as the influence one has upon the world.</p>
         </div>
       </section>
 
       {/* Our Estemed Sponsors */}
       <section className="w-[100%] h-[100%] bg-[#0B0B0B] py-6">
         <div className="w-[100%]">
-          <h1 className=' text-2xl  sm:text-5xl text-center mt-4 mb-4 font-bold tracking-wider text-[#ffff] '>OUR ESTEEMED <span className='text-[#EB0028] tracking-wider'>SPONSORS</span></h1>
+          <h1 className=' text-2xl  sm:text-5xl text-center mt-4 mb-4 font-[600] tracking-wider text-[#ffff] '>OUR ESTEEMED <span className='text-[#EB0028] tracking-wider'>SPONSORS</span></h1>
           {/* <h2 className=''>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2> */}
 
         </div>
@@ -158,16 +155,16 @@ const About = () => {
 
       {/* TEAM */}
       <section className='px-3 lg:mx-9'>
-        <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-bold tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
+        <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-[600] tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
         <div className='mb-10'>
-          <div className='flex  gap-y-3 justify-center team-flex sm:pl-5 mt-9 mb-5 overflow-scroll '>
+          <div className='flex gap-y-3 justify-center sm:pl-5 mt-9 mb-5 overflow-x-scroll vert-scr'>
             {
               domains.map((e, index) => {
-                return <>
-                  <h6 onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-10" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-10"}>{e}</h6>
-
+                return (
+                <>
+                  <h6 onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4"}>{e}</h6>
                 </>
-              })
+                )})
             }
           </div>
           <div className='flex justify-between mt-3 md:hidden'>
@@ -180,7 +177,7 @@ const About = () => {
         <div style={{ display: active === 0 ? "" : "none" }} className=''>
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Sachin Pisipati" role="ORGANIZER" photo={sachin} linkedin="https://www.linkedin.com/in/sachin-pisipati-a93494210/" />
-            <Member name="Akash Meka" role="CO-ORGANIZER" photo={akash} linkedin="https://www.linkedin.com/in/sachin-pisipati-a93494210/" />
+            <Member name="Akash Meka" role="CO-ORGANIZER" photo={akash} linkedin="https://www.linkedin.com/in/akash-meka-1a0861194" />
 
           </div>
 
@@ -188,21 +185,17 @@ const About = () => {
 
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
-
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
             <Member name="John Doe" role="" photo={member} linkedin="" />
-
-
-
 
           </div> */}
 
         </div>
         <div style={{ display: active === 1 ? "" : "none" }} >
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="Hutapriya L" role="HEAD" photo={priya} linkedin="" />
-            <Member name="Gaurang R" role="CO-HEAD" photo={gaurang} linkedin="" />
+            <Member name="Hutapriya L" role="HEAD" photo={priya} linkedin="https://www.linkedin.com/in/l-hutapriya-a64558239/" />
+            <Member name="Gaurang R" role="CO-HEAD" photo={gaurang} linkedin="https://www.linkedin.com/in/gaurang-ratnaparkhi-599964232" />
 
           </div>
 
@@ -222,8 +215,8 @@ const About = () => {
         </div>
         <div style={{ display: active === 2 ? "" : "none" }} >
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="Sneha V" role="HEAD" photo={sneha} linkedin="" />
-            <Member name="Mamtha P" role="CO-HEAD" photo={mamtha} linkedin="" />
+            <Member name="Sneha V" role="HEAD" photo={sneha} linkedin="https://www.linkedin.com/in/sneha-vellelath-2b6759207" />
+            <Member name="Mamtha P" role="CO-HEAD" photo={mamtha} linkedin="https://www.linkedin.com/in/mamtha-patalay/" />
 
           </div>
 
@@ -244,9 +237,8 @@ const About = () => {
         </div>
         <div style={{ display: active === 3 ? "" : "none" }}>
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="S Rajat Singh" role="HEAD" photo={rajat} linkedin="" />
-            <Member name="Amuktha K" role="CO-HEAD" photo={amuktha} linkedin="" />
-
+            <Member name="S Rajat Singh" role="HEAD" photo={rajat} linkedin="https://www.linkedin.com/in/rajat-singh-733362196/" />
+            <Member name="Amuktha K" role="CO-HEAD" photo={amuktha} linkedin="https://www.linkedin.com/in/amuktha-kotamsetty-5814b9104/" />
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
@@ -266,9 +258,8 @@ const About = () => {
         </div>
         <div style={{ display: active === 4 ? "" : "none" }}>
           <div className='flex gap-x-8 md:ml-5' >
-            <Member name="Ruth Roshni" role="HEAD" photo={member} linkedin="" />
-            <Member name="Niharika B" role="CO-HEAD" photo={member} linkedin="" />
-
+            <Member name="Ruth Roshni" role="HEAD" photo={ruth} linkedin="https://www.linkedin.com/in/ruth-roshni-maramulla-a44314222" />
+            <Member name="Niharika B" role="CO-HEAD" photo={niharika} linkedin="https://www.linkedin.com/in/niharika-buddaraju-95a165260/" />
           </div>
 
           {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
@@ -289,7 +280,7 @@ const About = () => {
         <div style={{ display: active === 5 ? "" : "none" }}>
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Krishna Gopal" role="HEAD" photo={krishna} linkedin="" />
-            <Member name="Abhishek K" role="CO-HEAD" photo={abhishek} linkedin="" />
+            <Member name="Abhishek K" role="CO-HEAD" photo={abhishek} linkedin="https://www.linkedin.com/in/abhishek-kokkonda-1361041b0" />
 
           </div>
 
@@ -311,7 +302,7 @@ const About = () => {
         <div style={{ display: active === 6 ? "" : "none" }} >
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Adarsh Pandey" role="HEAD" photo={adarsh} linkedin="https://www.linkedin.com/in/adarsh-pandey-379a1b21a/" />
-            <Member name="Manoj Sharma" role="CO-HEAD" photo={manoj} linkedin="" />
+            <Member name="Manoj Sharma" role="CO-HEAD" photo={manoj} linkedin="https://www.linkedin.com/in/mvns-manoj-8148a21a5" />
 
           </div>
 
@@ -331,11 +322,35 @@ const About = () => {
 
         </div>
         
-        <div style={{ display: active === 7 ? "" : "none" }}>
+        <div style={{ display: active === 8 ? "" : "none" }}>
 
           <div className='flex gap-x-8 md:ml-5' >
             <Member name="Hemanth V" role="HEAD" photo={vakati} linkedin="https://www.linkedin.com/in/hemanth-kumar-reddy-vakati-915115198/" />
             <Member name="Hemanth N" role="CO-HEAD" photo={naidu} linkedin="https://www.linkedin.com/in/hemanth-naidu-7b1b301a4/" />
+
+          </div>
+
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
+
+
+
+
+          </div> */}
+
+        </div>
+
+        <div style={{ display: active === 7 ? "" : "none" }}>
+
+          <div className='flex gap-x-8 md:ml-5' >
+            <Member name="Rahul M" role="HEAD" photo={rahul} linkedin="https://www.linkedin.com/in/rahul-munamarthi" />
+            <Member name="Vamsi Krishna" role="CO-HEAD" photo={vamsi} linkedin="https://www.linkedin.com/in/vamshi-krishna-978bb6207" />
 
           </div>
 
