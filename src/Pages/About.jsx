@@ -32,7 +32,7 @@ import niharika from "../Assets/Niharika.png";
 import "./about.css"
 const About = () => {
 
-  const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography" , "Web"]
+  const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography", "Web"]
   const [active, setActive] = useState(0)
   const increament = () => setActive(active + 1)
   const decreament = () => setActive(active - 1)
@@ -132,8 +132,8 @@ const About = () => {
         </div> */}
       </section>
 
-        {/* THEME */}
-        {/* <section className="w-[100%] h-[100%] themeBG py-6 relative">
+      {/* THEME */}
+      {/* <section className="w-[100%] h-[100%] themeBG py-6 relative">
           <div className="bgX absolute w-[100%] h-[100%] flex items-center justify-center inset-0">
             <img src={tedThemeX} alt="X" className='w-[80%] h-[80%]'/>
           </div>
@@ -154,17 +154,18 @@ const About = () => {
         </section> */}
 
       {/* TEAM */}
-      <section className='px-3 lg:mx-9'>
+      <section className='px-3  container'>
         <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-[600] tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
         <div className='mb-10'>
-          <div className='flex gap-y-3 justify-center sm:pl-5 mt-9 mb-5 overflow-x-scroll vert-scr'>
+          <div className='flex vScroll gap-y-3 justify-center mt-9  mb-5 overflow-x-scroll pl-[160px] sm:pl-96 md:pl-40 lg:pl-10'>
             {
               domains.map((e, index) => {
                 return (
-                <>
-                  <h6 onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4"}>{e}</h6>
-                </>
-                )})
+                  <>
+                    <h6 onClick={() => checkActive(index)} className={active === index ? "active tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4" : "category tracking-wider text-xs md:text-xl px-2 sm:px-6 md:px-4"}>{e}</h6>
+                  </>
+                )
+              })
             }
           </div>
           <div className='flex justify-between mt-3 md:hidden'>
@@ -321,7 +322,7 @@ const About = () => {
           </div> */}
 
         </div>
-        
+
         <div style={{ display: active === 8 ? "" : "none" }}>
 
           <div className='flex gap-x-8 md:ml-5' >
