@@ -102,7 +102,7 @@ const About = () => {
         </div>
         <div className="flex flex-col items-start justify-center gap-y-5">
           <p className='font-[Poppins] font-[500] text-[20px] sm:text-[22px] text-[#0B0B0B] leading-[28px] sm:leading-[32px] fontSizing'>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</p>
-          <p className='font-[Poppins] font-[500] text-[20px] sm:text-[22px] text-[#0B0B0B] leading-[28px] sm:leading-[32px] fontSizing'><span className='text-[#EB0028] font-[600] text-[24px]'>TEDx<span className='text-[#0B0B0B] font-[600] text-[24px]'>IARE</span></span> is a localised TED event organised by our team on the theme 'Nature vs Nurture', where we try to understand the various influences upon a person's life, as well as the influence one has upon the world.</p>
+          <p className='font-[Poppins] font-[500] text-[20px] sm:text-[22px] text-[#0B0B0B] leading-[28px] sm:leading-[32px] fontSizing'><span className='text-[#EB0028] font-[600] text-[24px]'>TEDx<span className='text-[#0B0B0B] font-[600] text-[24px]'>IARE</span></span> is a TED event organised for a more niche audience by our team on the theme 'Nature vs Nurture', where we try to understand the various influences upon a person's life, as well as the influence one has upon the world.</p>
         </div>
       </section>
 

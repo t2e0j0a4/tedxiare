@@ -25,12 +25,12 @@ const Footer = () => {
           </div>
           <div className="flex flex-row gap-x-4">
             <a href="https://www.instagram.com/tedx_iare/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><FaInstagram fontSize='20px' /></a>
-            <a href="/" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><MdOutlineMail fontSize='20px' /></a>
+            <a href="mailto:tedxiare2022@gmail.com?subject=Queries" target="_blank" rel="noreferrer" className='bg-[#EB0028] p-[6px] flex justify-center items-center text-[#0B0B0B] rounded-[50%]'><MdOutlineMail fontSize='20px' /></a>
           </div>
         </div>
 
         <div className="text-[16px] font-[500] leading-[24px] tracking-wider text-[#FFFFFF] font-[Poppins] w-[90%] lg:w-[40%]">
-          <p>TEDxIARE is an event organised by students at the Institute of Aeronautical Engineering that features an an array of engaging speakers geared towards sparking positive transformation.</p>
+          <p>TEDxIARE is an event organised by students at the Institute of Aeronautical Engineering that features an array of engaging speakers geared towards sparking positive transformation.</p>
         </div>
 
         <div className="flex flex-row w-[90%] justify-start lg:w-[auto] gap-x-6 items-start lg:justify-center">
@@ -42,7 +42,7 @@ const Footer = () => {
           </ul>
           <ul className='flex flex-col items-start justify-center gap-y-2'>
             <li className='text-[#EB0028] font-[700] font-[Poppins] text-[16px]'>Get in touch</li>
-            <li className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'>tedxiare@gmail.com</li>
+            <li className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'>tedxiare2022@gmail.com</li>
             <li className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'>IARE,Hyderabad</li>
           </ul>
           <ul className=''></ul>

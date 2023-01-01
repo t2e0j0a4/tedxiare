@@ -58,8 +58,8 @@ const Home = () => {
                     <img src={TedTheme} alt="TedTheme" className='w-[80%]'/>
                 </div>
                 <div className="w-[100%] lg:w-[50%] flex flex-col items-start justify-center gap-y-4 font-[Poppins] font-[500] text-[18px] sm:text-[20px] text-[#0B0B0B] leading-[28px] sm:leading-[32px] fontSizing">
-                    <p className=' text-[#ffffff]'>What is it that defines who or what a person becomes during the time they have here on earth? Is it that nature that, despite all of our trials and tribulations, triumphs? Or is it that the pomp and circumstance of life prevail no matter what. Our actions define us, and our environment is a byproduct of our culture. One could say the difference between identical genetics is that of upbringing and nurture. We are all different; we cater to our own interests and give the few another problem to solve, but this piques curiosity for a reason; it’s human nature. The most subtle approach to this baffling question would be to say that we are a blend of nature and nurture.</p>
-                    <p className="text-[#ffffff]">At TEDX IARE, let's explore nature vs. nurture and learn to put nature and nurture in harmony to overcome our own limitations.</p>
+                    <p className=' text-[#ffffff]'>What is it that defines who or what a person becomes during the time they have here on earth? Is it that nature that, despite all of our trials and tribulations, triumphs? Or is it that the pomp and circumstance of life prevails no matter what. Our actions define us, and our environment is a byproduct of culture. One could say the difference between identical genetics is that of upbringing and nurture. One could say that an individual is a battleground on which nature and nurture fight for dominance.</p>
+                    <p className="text-[#ffffff]">At TEDx IARE, let's explore nature vs. nurture, put them in harmony and overcome our own limitations.</p>
                 </div>
             </div>
         </section>
