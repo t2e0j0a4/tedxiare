@@ -42,7 +42,7 @@ const Footer = () => {
           </ul>
           <ul className='flex flex-col items-start justify-center gap-y-2'>
             <li className='text-[#EB0028] font-[700] font-[Poppins] text-[16px]'>Get in touch</li>
-            <li className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'>tedxiare2022@gmail.com</li>
+            <li className='text-[#ffffff] break-all font-[500] font-[Poppins] text-[16px]'>tedxiare2022@gmail.com</li>
             <li className='text-[#ffffff] font-[500] font-[Poppins] text-[16px]'>IARE,Hyderabad</li>
           </ul>
           <ul className=''></ul>
