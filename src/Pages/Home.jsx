@@ -69,7 +69,7 @@ const Home = () => {
             <div className="w-[100%] flex justify-center items-center text-center mb-6">
                 <h1 className='text-[36px] sm:text-[48px] text-center font-[600] leading-[72px] text-[#EB0028]'>S<span className='text-[#ffffff] tracking-wider'>PEAKERS</span></h1>
             </div>
-            <div className=" w-[94%] sm:w-[90%] mx-auto grid ">
+            <div className=" w-[94%] sm:w-[90%] mx-auto flex flex-row gap-x-3 items-center gap-y-4 flex-wrap justify-center">
                 {
                     speakers.map((speaker)=>{
                         return (

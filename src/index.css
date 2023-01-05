@@ -160,6 +160,11 @@ html {
   
 }
 
+#instagram:hover{
+  background: linear-gradient(to top , #feda75 , #fa7e1e , #d62976 , #962fbf , #4f5bd5);
+  color: white;
+}
+
 @media only screen and (max-width: 768px) {
   .navBG {
     background-image: url("./Assets/nav-bg.png");
