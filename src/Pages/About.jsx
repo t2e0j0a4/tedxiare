@@ -184,7 +184,7 @@ const About = () => {
               domains.map((domain,index)=>{
                 return (
                   <>
-                    <h6 key={uuidv4()} onClick={()=>{checkActive(index)}} className={` text-[12px] md:text-[16px] lg:text-[18px] py-2 text-center cursor-pointer ${active === index ? 'active' : 'category'} px-2 sm:px-4 md:px-6`} >{domain}</h6>
+                    <h6 key={uuidv4()} onClick={()=>{checkActive(index)}} className={` text-[12px] md:text-[16px] lg:text-[18px] py-2 text-center cursor-default sm:cursor-pointer ${active === index ? 'active' : 'category'} px-2 sm:px-4 md:px-6`} >{domain}</h6>
                   </>
                 )
               })

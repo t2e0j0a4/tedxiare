@@ -17,7 +17,7 @@ const Speaker = (props) => {
             </div>
             <div className="w-[100%] z-[100] absolute bottom-0 h-auto  bg-[#0B0B0B] bg-opacity-80 flex flex-col items-center justify-center">
                 <span className='w-[100%] text-[15px] sm:text-[17px] md:text-[20px] font-[500] leading-[26px] py-2 text-[#ffffff] hover:bg-[#EB0028] hover:bg-opacity-60 cursor-default font-[Poppins] tracking-wider text-center'>{name}</span>
-                <span className=' text-[12px] sm:text-[16px] bg-[#0B0B0B] w-[100%] pt-1 font-[700] leading-[24px] text-[#EB0028] font-[Poppins] cursor-default tracking-wider text-opacity-[0.8] text-center bg-opacity-90'>{role}</span>
+                <span className=' text-[12px] sm:text-[14px] bg-[#0B0B0B] w-[100%] pt-1 font-[700] leading-[24px] text-[#EB0028] font-[Poppins] cursor-default tracking-wider text-opacity-[0.8] text-center bg-opacity-90'>{role}</span>
             </div>
         </div>
     )

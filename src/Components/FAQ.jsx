@@ -8,16 +8,16 @@ const FAQ = (props) => {
     const [showInfo, setShowInfo] = useState(false);
 
     return (
-        <div className="question-box w-[99%] md:w-[84%] lg:w-[72%] bg-[#ffffff] border-b-[6px] rounded-[8px] border-[#EB0028] py-3 cursor-pointer" onClick={() => {
+        <div className="question-box w-[99%] md:w-[84%] lg:w-[72%] bg-[#ffffff] border-b-[6px] rounded-[8px] border-[#EB0028] py-3 cursor-default sm:cursor-pointer" onClick={() => {
           setShowInfo(!showInfo);
         }}>
           <div className="question-section flex items-center justify-between px-6 my-2 gap-x-7">
-            <span className=" w-[100%] text-[16px] sm:text-[18px] md:text-[21px] font-[500] leading-[26px] font-[Poppins] cursor-pointer select-none text-[#0B0B0B]" onClick={() => {
+            <span className=" w-[100%] text-[16px] sm:text-[18px] md:text-[21px] font-[500] leading-[26px] font-[Poppins] cursor-default sm:cursor-pointer select-none text-[#0B0B0B]" onClick={() => {
                 setShowInfo(!showInfo);
               }}>
               {question}
             </span>
-            <span className="cursor-pointer p-1 duration-500 transition-all" onClick={() => {
+            <span className="cursor-default sm:cursor-pointer p-1 duration-500 transition-all" onClick={() => {
                 setShowInfo(!showInfo);
               }}>
               {
