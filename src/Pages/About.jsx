@@ -28,6 +28,12 @@ import sneha from "../Assets/sneha.png";
 import vakati from "../Assets/vakati.png";
 import vamsi from "../Assets/vamsi.png";
 import niharika from "../Assets/Niharika.png";
+import sponser2 from "../Assets/sponser-2.png";
+import sponser3 from "../Assets/sponser-3.png";
+import sponser4 from "../Assets/sponser-4.png";
+import sponser5 from "../Assets/sponser-5.png";
+
+
 
 // CSS
 import "./about.css"
@@ -42,7 +48,7 @@ const About = () => {
 
   // const increament = () => setActive(active + 1)
   // const decreament = () => setActive(active - 1)
-  
+
   const checkActive = (e) => {
     setActive(e);
   }
@@ -117,9 +123,35 @@ const About = () => {
           <div className='flex flex-col items-center space-y-6 mt-8 gap-x-5 pb-5'>
             <a target="_blanck" href="https://www.almondhouse.com/">
 
-              <img src={sponser1} alt="Dummy" className='w-[200px]' />
+              <img src={sponser1} alt="Dummy" className='w-[170px] md:w-[200px]' />
             </a>
             <span className='bg-[#EB0028] text-[20px] sm:text-[22px] font-[600] leading-[32px] text-[#ffffff] px-[24px] py-[2px] tracking-wide'>TITLE SPONSOR</span>
+
+          </div>
+          <div className='flex flex-col items-center mt-3 pb-6'>
+            <span className='text-[#EB0028] text-[20px] md:text-[32px] font-[600] leading-[32px] px-[24px] py-[2px] tracking-wider'>CO-<span className='text-[#ffffff]'>SPONSORS</span></span>
+            <div className='mt-5 grid grid-cols-3 items-center sm:space-x-7 md:space-x-10 '>
+              <a target="_blank" href="http://www.suagifts.com">
+                <img className='w-[119px] md:w-[222px]' src={sponser3} alt="" />
+
+              </a>
+              <a href='https://www.grabon.in' target="_blank">
+                <img className='w-[108px] md:w-[209px]' src={sponser4} alt="" />
+
+              </a>
+              <a href='https://www.drrajus.com/' target="_blank">
+                <img className='w-[103px] md:w-[210px]' src={sponser2} alt="" />
+
+              </a>
+
+
+
+            </div>
+            <a href='https://luvieessentials.com' target="_blank">
+              <img className='text-center w-[167px] md:w-[340px] mt-4' src={sponser5} alt="" />
+
+            </a>
+
 
           </div>
         </div>
@@ -159,7 +191,7 @@ const About = () => {
       {/* TEAM */}
       <section className='px-3 w-[100%] md:w-[95%] mx-auto space-y-8'>
         <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-[600] tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
-        
+
         {/* <div className='mb-10'>
           <div className='flex vScroll gap-y-3 justify-center mt-9  mb-5 overflow-x-scroll pl-[160px] sm:pl-96 md:pl-40 lg:pl-10'>
             {
@@ -181,10 +213,10 @@ const About = () => {
         <div className="my-8 mx-auto">
           <div className="w-[100%] flex flex-row items-end justify-start lg:justify-center flex-wrap lg:flex-nowrap">
             {
-              domains.map((domain,index)=>{
+              domains.map((domain, index) => {
                 return (
                   <>
-                    <h6 key={uuidv4()} onClick={()=>{checkActive(index)}} className={` text-[12px] md:text-[16px] lg:text-[18px] py-2 text-center cursor-default sm:cursor-pointer ${active === index ? 'active' : 'category'} px-2 sm:px-4 md:px-6`} >{domain}</h6>
+                    <h6 key={uuidv4()} onClick={() => { checkActive(index) }} className={` text-[12px] md:text-[16px] lg:text-[18px] py-2 text-center cursor-default sm:cursor-pointer ${active === index ? 'active' : 'category'} px-2 sm:px-4 md:px-6`} >{domain}</h6>
                   </>
                 )
               })
