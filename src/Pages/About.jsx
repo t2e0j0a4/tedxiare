@@ -115,7 +115,7 @@ const About = () => {
       {/* Our Estemed Sponsors */}
       <section className="w-[100%] h-[100%] bg-[#0B0B0B] py-6">
         <div className="w-[100%]">
-          <h1 className=' text-2xl  sm:text-5xl text-center mt-4 mb-4 font-[600] tracking-wider text-[#ffff] '>OUR ESTEEMED <span className='text-[#EB0028] tracking-wider'>SPONSORS</span></h1>
+          <h1 className='text-2xl  sm:text-5xl text-center mt-4 mb-4 font-[600] tracking-wider text-[#ffff] '>OUR ESTEEMED <span className='text-[#EB0028] tracking-wider'>SPONSORS</span></h1>
           {/* <h2 className=''>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2> */}
 
         </div>
@@ -128,8 +128,8 @@ const About = () => {
             <span className='bg-[#EB0028] text-[20px] sm:text-[22px] font-[600] leading-[32px] text-[#ffffff] px-[24px] py-[2px] tracking-wide'>TITLE SPONSOR</span>
 
           </div>
-          <div className='flex flex-col items-center mt-3 pb-6'>
-            <span className='text-[#EB0028] text-[20px] md:text-[32px] font-[600] leading-[32px] px-[24px] py-[2px] tracking-wider'>CO-<span className='text-[#ffffff]'>SPONSORS</span></span>
+          <div className='flex flex-col items-center mt-4 md:mt-7 pb-6'>
+            <span className='text-[#EB0028] text-[18px] md:text-[22px] font-[600] leading-[32px] px-[24px] py-[2px] tracking-wider'>CO-<span className='text-[#ffffff]'>SPONSORS</span></span>
             <div className='mt-5 grid grid-cols-3 items-center sm:space-x-7 md:space-x-10 '>
               <a target="_blank" rel="noopener noreferrer" href="http://www.suagifts.com">
                 <img className='w-[119px] md:w-[222px]' src={sponser3} alt="" />
@@ -190,7 +190,9 @@ const About = () => {
 
       {/* TEAM */}
       <section className='px-3 w-[100%] md:w-[95%] mx-auto space-y-8'>
-        <h2 className=' text-2xl  sm:text-5xl text-center mt-7 font-[600] tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2>
+        {/* <h2 className='text-2xl sm:text-5xl text-center mt-7 font-[600] tracking-wider'>MEET OUR <span className='text-[#EB0028]'>TEAM</span></h2> */}
+        <h1 className='text-2xl  sm:text-5xl text-center mt-4 mb-4 font-[600] tracking-wider text-[rgba(11, 11, 11, 1)] '>MEET OUR <span className='text-[#EB0028] tracking-wider'>TEAM</span></h1>
+
 
         {/* <div className='mb-10'>
           <div className='flex vScroll gap-y-3 justify-center mt-9  mb-5 overflow-x-scroll pl-[160px] sm:pl-96 md:pl-40 lg:pl-10'>
