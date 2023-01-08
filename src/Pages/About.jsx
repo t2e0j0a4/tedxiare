@@ -131,15 +131,15 @@ const About = () => {
           <div className='flex flex-col items-center mt-3 pb-6'>
             <span className='text-[#EB0028] text-[20px] md:text-[32px] font-[600] leading-[32px] px-[24px] py-[2px] tracking-wider'>CO-<span className='text-[#ffffff]'>SPONSORS</span></span>
             <div className='mt-5 grid grid-cols-3 items-center sm:space-x-7 md:space-x-10 '>
-              <a target="_blank" href="http://www.suagifts.com">
+              <a target="_blank" rel="noopener noreferrer" href="http://www.suagifts.com">
                 <img className='w-[119px] md:w-[222px]' src={sponser3} alt="" />
 
               </a>
-              <a href='https://www.grabon.in' target="_blank">
+              <a href='https://www.grabon.in' rel="noopener noreferrer" target="_blank">
                 <img className='w-[108px] md:w-[209px]' src={sponser4} alt="" />
 
               </a>
-              <a href='https://www.drrajus.com/' target="_blank">
+              <a href='https://www.drrajus.com/' rel="noopener noreferrer" target="_blank">
                 <img className='w-[103px] md:w-[210px]' src={sponser2} alt="" />
 
               </a>
@@ -147,7 +147,7 @@ const About = () => {
 
 
             </div>
-            <a href='https://luvieessentials.com' target="_blank">
+            <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
               <img className='text-center w-[167px] md:w-[340px] mt-4' src={sponser5} alt="" />
 
             </a>
