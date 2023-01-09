@@ -134,11 +134,11 @@ const About = () => {
             <span className='text-[#EB0028] text-[18px] md:text-[22px] font-[600] leading-[32px] px-[24px] py-[2px] tracking-wider'>CO-<span className='text-[#ffffff]'>SPONSORS</span></span>
             <div className='flex gap-x-10 mt-8'>
               <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
-                <img className='w-[113px] md:w-[220px]' src={sponser6} alt="" />
+                <img className='w-[163px] md:w-[280px]' src={sponser6} alt="" />
 
               </a>
               <a href='https://www.drrajus.com/' rel="noopener noreferrer" target="_blank">
-                <img className='w-[103px] md:w-[210px]' src={sponser2} alt="" />
+                <img className='w-[153px] md:w-[270px]' src={sponser2} alt="" />
 
               </a>
 
