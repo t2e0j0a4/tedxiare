@@ -125,7 +125,7 @@ const About = () => {
           <div className='flex flex-col items-center space-y-6 mt-8 gap-x-5 pb-5'>
             <a target="_blanck" href="https://www.almondhouse.com/">
 
-              <img src={sponser1} alt="Dummy" className='w-[170px] md:w-[200px]' />
+              <img src={sponser1} alt="Dummy" className='w-[190px] md:w-[230px]' />
             </a>
             <span className='bg-[#EB0028] text-[20px] sm:text-[22px] font-[600] leading-[32px] text-[#ffffff] px-[24px] py-[2px] tracking-wide'>TITLE SPONSOR</span>
 
