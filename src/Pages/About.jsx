@@ -32,6 +32,8 @@ import sponser2 from "../Assets/sponser-2.png";
 import sponser3 from "../Assets/sponser-3.png";
 import sponser4 from "../Assets/sponser-4.png";
 import sponser5 from "../Assets/sponser-5.png";
+import sponser6 from "../Assets/sponsor-6.png";
+
 
 
 
@@ -130,13 +132,9 @@ const About = () => {
           </div>
           <div className='flex flex-col items-center mt-4 md:mt-7 pb-6'>
             <span className='text-[#EB0028] text-[18px] md:text-[22px] font-[600] leading-[32px] px-[24px] py-[2px] tracking-wider'>CO-<span className='text-[#ffffff]'>SPONSORS</span></span>
-            <div className='mt-5 grid grid-cols-3 items-center sm:space-x-7 md:space-x-10 '>
-              <a target="_blank" rel="noopener noreferrer" href="http://www.suagifts.com">
-                <img className='w-[119px] md:w-[222px]' src={sponser3} alt="" />
-
-              </a>
-              <a href='https://www.grabon.in' rel="noopener noreferrer" target="_blank">
-                <img className='w-[108px] md:w-[209px]' src={sponser4} alt="" />
+            <div className='flex gap-x-10 mt-8'>
+              <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
+                <img className='w-[113px] md:w-[220px]' src={sponser6} alt="" />
 
               </a>
               <a href='https://www.drrajus.com/' rel="noopener noreferrer" target="_blank">
@@ -147,12 +145,22 @@ const About = () => {
 
 
             </div>
-            <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
-              <img className='text-center w-[167px] md:w-[340px] mt-4' src={sponser5} alt="" />
+            <div className='mt-5 grid grid-cols-3 items-center sm:space-x-7 md:space-x-5 px-3'>
+              <a target="_blank" rel="noopener noreferrer" href="http://www.suagifts.com">
+                <img className='w-[119px] md:w-[222px]' src={sponser3} alt="" />
 
-            </a>
+              </a>
+              <a href='https://www.grabon.in' rel="noopener noreferrer" target="_blank">
+                <img className='w-[108px] md:w-[209px]' src={sponser4} alt="" />
+
+              </a>
 
 
+              <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
+                <img className='text-center w-[137px] md:w-[310px]' src={sponser5} alt="" />
+
+              </a>
+            </div>
           </div>
         </div>
         {/* <div className='w-[90%] h-[100%] overflow-x-hidden mx-auto'>
