@@ -164,14 +164,9 @@ const About = () => {
               </a>
             </div>
             <div className='flex gap-x-10 mt-2'>
-              <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
+              <a href='https://www.instagram.com/amprint.india/' rel="noopener noreferrer" target="_blank">
                 <img className='w-[163px] md:w-[290px]' src={sponsor7} alt="" />
-
               </a>
-
-
-
-
             </div>
           </div>
         </div>
