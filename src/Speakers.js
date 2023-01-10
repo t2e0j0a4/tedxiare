@@ -1,7 +1,8 @@
 import sri from "./Assets/sri.jfif";
-import pound from "./Assets/pound kakkar.jpg";
+import pound from "./Assets/pound kakkar.png";
 import arun from "./Assets/arun krishnamurthy.png";
 import ajay from "./Assets/Ajay.png";
+import divya from "./Assets/Divya Boppana.png"
 
 const speakers = [
   {
@@ -33,6 +34,13 @@ const speakers = [
     role: "Pilot, Entrepreneur & Fashion Influencer",
     instagram : 'https://www.instagram.com/ajayfromayejude/',
     image: ajay,
+  },
+  {
+    id: 5,
+    name: "Divya Boppana",
+    role: "Digital Content Creator",
+    instagram : 'https://www.instagram.com/divyaboppana_/',
+    image: divya,
   },
 ];
 
