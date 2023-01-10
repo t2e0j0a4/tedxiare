@@ -33,6 +33,8 @@ import sponser3 from "../Assets/sponser-3.png";
 import sponser4 from "../Assets/sponser-4.png";
 import sponser5 from "../Assets/sponser-5.png";
 import sponser6 from "../Assets/sponsor-6.png";
+import sponsor7 from "../Assets/sponsor-7.png";
+
 
 
 
@@ -145,7 +147,7 @@ const About = () => {
 
 
             </div>
-            <div className='mt-5 grid grid-cols-3 items-center sm:space-x-7 md:space-x-5 px-3'>
+            <div className='mt-5 grid grid-cols-3 items-center sm:space-x-7 md:space-x-5 pt-3'>
               <a target="_blank" rel="noopener noreferrer" href="http://www.suagifts.com">
                 <img className='w-[119px] md:w-[222px]' src={sponser3} alt="" />
 
@@ -160,6 +162,16 @@ const About = () => {
                 <img className='text-center w-[137px] md:w-[310px]' src={sponser5} alt="" />
 
               </a>
+            </div>
+            <div className='flex gap-x-10 mt-2'>
+              <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
+                <img className='w-[163px] md:w-[290px]' src={sponsor7} alt="" />
+
+              </a>
+
+
+
+
             </div>
           </div>
         </div>
