@@ -16,7 +16,7 @@ const speakers = [
   },
   {
     id: 2,
-    name: "Pound Kakkar",
+    name: "Pound Kakar",
     role: "Professional Pole Dancer",
     instagram: "https://www.instagram.com/kakarpound_pole/",
     image: pound,
