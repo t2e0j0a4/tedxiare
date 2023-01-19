@@ -165,6 +165,18 @@ html {
   color: white;
 }
 
+/* Timetable */
+
+.timetableOuter{
+  overflow-x: scroll;
+}
+
+.timetableOuter::-webkit-scrollbar {
+  display: none;
+}
+
+/* Timetable */
+
 @media only screen and (max-width: 768px) {
   .navBG {
     background-image: url("./Assets/nav-bg.png");
