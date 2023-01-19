@@ -12,6 +12,11 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: #dc2626;
+  color: white;
+}
+
 .desktop-image {
   width: 100%;
 }
