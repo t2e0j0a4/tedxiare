@@ -2,9 +2,8 @@
 import React from 'react'
 
 // Assets Imports
-import BG from "../Assets/S.mp4";
-import BG2 from "../Assets/TEDX m.mp4"
-import BG3 from "../Assets/Comp 2_3.mp4"
+import video1 from "../Assets/Desktop Hero Video.mp4";
+import video2 from "../Assets/Mobile Hero Video.mp4";
 import TedTheme from "../Assets/TedTheme.svg";
 import Mic from "../Assets/SchedulesMic.svg";
 
@@ -31,9 +30,8 @@ const Home = () => {
         
         {/* BG VIDEO */}
         <section className="relative w-[100%] h-[100vh]">
-            <video src={BG} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover hidden lg:block"/>
-            <video src={BG2} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover md:block lg:hidden sm:hidden"/>
-            <video src={BG3} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover block md:hidden lg:hidden"/>
+            <video src={video1} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover hidden md:block"/>
+            <video src={video2} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover block md:hidden"/>
         </section>
 
         {/* ABOUT TED */}

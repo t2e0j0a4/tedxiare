@@ -7,7 +7,7 @@ const questions = [
     {
         id : 2,
         question : 'How long is the event?',
-        answer : 'The event starts at 10 AM on the 29th January, and ends at 6 PM. Which is 8 hours, including an interval.'
+        answer : 'The event starts at 10 AM on the 26th January, and ends at 6 PM. Which is 8 hours, including an interval.'
     },
     {
         id : 3,
