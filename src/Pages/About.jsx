@@ -172,7 +172,7 @@ const About = () => {
           <div className='flex flex-col items-center mt-4 md:mt-7 pb-6'>
             <span className='text-[#EB0028] text-[18px] md:text-[22px] font-[600] leading-[32px] px-[24px] py-[2px] tracking-wider'>CO-<span className='text-[#ffffff]'>SPONSORS</span></span>
             <div className='flex gap-x-10 mt-8'>
-              <a href='https://www.thinklogic.com/' rel="noopener noreferrer" target="_blank">
+              <a href='https://www.thinklogicinc.com/' rel="noopener noreferrer" target="_blank">
                 <img className='w-[163px] md:w-[280px]' src={sponser6} alt="" />
 
               </a>
