@@ -2,9 +2,8 @@
 import React from 'react'
 
 // Assets Imports
-import BG from "../Assets/S.mp4";
-import BG2 from "../Assets/TEDX m.mp4"
-import BG3 from "../Assets/Comp 2_3.mp4"
+import video1 from "../Assets/Desktop Hero Video.mp4";
+import video2 from "../Assets/Mobile Hero Video.mp4";
 import TedTheme from "../Assets/TedTheme.svg";
 import Mic from "../Assets/SchedulesMic.svg";
 
@@ -12,7 +11,7 @@ import Mic from "../Assets/SchedulesMic.svg";
 // import Schedule from '../Components/Schedule';
 import Speaker from '../Components/Speaker';
 import FAQ from '../Components/FAQ';
-// import Schedule from "../Components/Schedule";
+
 import speakers from '../Speakers';
 import questions from "../FAQ";
 // import schedule from "../Schedule.js";
@@ -31,9 +30,8 @@ const Home = () => {
         
         {/* BG VIDEO */}
         <section className="relative w-[100%] h-[100vh]">
-            <video src={BG} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover hidden lg:block"/>
-            <video src={BG2} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover md:block lg:hidden sm:hidden"/>
-            <video src={BG3} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover block md:hidden lg:hidden"/>
+            <video src={video1} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover hidden md:block"/>
+            <video src={video2} autoPlay  muted className="absolute top-0 h-[100%] w-[100%] object-cover block md:hidden"/>
         </section>
 
         {/* ABOUT TED */}
@@ -69,7 +67,7 @@ const Home = () => {
             <div className="w-[100%] flex justify-center items-center text-center mb-6">
                 <h1 className='text-[36px] sm:text-[48px] text-center font-[600] leading-[72px] text-[#EB0028]'>S<span className='text-[#ffffff] tracking-wider'>PEAKERS</span></h1>
             </div>
-            <div className=" w-[94%] sm:w-[92%] mx-auto grid gap-3 grid-rows-4 grid-cols-2 sm:grid-rows-2 lg:grid-cols-3 xl:grid-cols-4 xl:grid-rows-1 gridSystem">
+            <div className=" w-[94%] sm:w-[92%] mx-auto grid gap-3 grid-rows-4 grid-cols-2 sm:grid-rows-4 lg:grid-cols-3 lg:grid-rows-3 xl:grid-cols-4 xl:grid-rows-2 2xl:grid-cols-5 2xl:grid-rows-2 gridSystem">
                 {
                     speakers.map((speaker)=>{
                         return (
@@ -84,7 +82,7 @@ const Home = () => {
         <section className="w-[100%] h-[100%] bg-[#ffffff]">
             <div className="w-[100%] h-[100%] flex flex-col items-start md:items-center justify-center md:flex-row py-6 md:py-4 gap-y-4">
                 <div className="w-[94%] sm:w-[80%] md:w-[50%] py-6 flex justify-center items-center bg-[#EB0028] rounded-br-[6rem]">
-                    <p className='text-[24px] md:text-[30px] w-[90%] md:w-[80%] mx-auto md:leading-[36px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[56px] text-[#ffffff] font-[600] font-[Poppins] tracking-wider'>Watch out this space for the schedule!</p>
+                    <p className=' text-[18px] sm:text-[24px] md:text-[30px] w-[90%] md:w-[80%] mx-auto md:leading-[36px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[56px] text-[#ffffff] font-[600] font-[Poppins] tracking-wider'>Watch out this space for the schedule!</p>
                 </div>
                 <div className="w-[94%] md:w-[50%] h-[320px] scheduleImg sm:h-[450px] md:h-[330px] lg:h-[400px] xl:h-[400px] 2xl:h-[470px] flex justify-center items-center relative z-[0]">
                     <img src={Mic} alt="Mic" className=' w-[80%] sm:w-[70%] absolute top-[10px] sm:top-[80px] md:top-[80px] lg:top-[20px] xl:top-[20px] 2xl:top-[0px] z-[0]' />
@@ -97,8 +95,8 @@ const Home = () => {
             <div className="w-[100%] flex justify-center items-center text-center mb-6">
                 <h1 className='text-[32px] sm:text-[48px] text-center font-[600] leading-[48px] md:leading-[72px] text-[#0B0B0B]'>SCHEDULED <span className='text-[#EB0028] tracking-wider'>TALKS</span></h1>
             </div>
-            <div className="timetableOuter w-[90%] h-[100%] mx-auto my-2 overflow-x-scroll">
-                <div className="timetableWrapper w-[2400px] h-[400px] flex flex-row items-start justify-start sm:px-[4rem] bg-red-800">
+            <div className="timetableOuter w-[90%] h-[100%] mx-auto my-2">
+                <div className="timetableWrapper w-[2400px] h-[400px] flex flex-row items-start justify-start sm:px-[4rem] bg-yellow-500">
                     {
                         schedule.map((scheduled)=>{
                             return (
