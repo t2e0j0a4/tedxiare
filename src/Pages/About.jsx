@@ -2,13 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 import desktopBG from "../Assets/about-desktop.png";
 import mobileBG from "../Assets/about-mobile.png";
-// import tedThemeX from "../Assets/TedThemeX.svg";
-// import TedTheme from "../Assets/TedTheme2.svg";
-// import NvN from "../Assets/ThemeNvN.svg";
-// import trophy from "../Assets/trophy.svg";
 import linkedin from "../Assets/linkedin.svg";
-// import prev from "../Assets/prev.svg";
-// import next from "../Assets/next.svg";
+
 import sponser1 from "../Assets/sponser-1.svg";
 import abhishek from "../Assets/abhishek.png";
 import adarsh from "../Assets/adarsh.png";
@@ -31,14 +26,59 @@ import niharika from "../Assets/Niharika.png";
 import sponser2 from "../Assets/sponser-2.png";
 import sponser3 from "../Assets/sponser-3.png";
 import sponser4 from "../Assets/sponser-4.png";
-import sponser5 from "../Assets/sponser-5.png";
 import sponser6 from "../Assets/sponsor-6.png";
 import sponsor7 from "../Assets/sponsor-7.png";
+import c1 from "../Assets/content/01.png"
+import c2 from "../Assets/content/02.png"
+import c3 from "../Assets/content/03.png"
+import c4 from "../Assets/content/04.png"
+import d1 from "../Assets/design/01.png"
+import d2 from "../Assets/design/02.png"
+import d3 from "../Assets/design/03.png"
+import d4 from "../Assets/design/04.png"
+import cr1 from "../Assets/crpr/01.png"
+import cr2 from "../Assets/crpr/02.png"
+import cr3 from "../Assets/crpr/03.png"
+import cr4 from "../Assets/crpr/04.png"
+import cr5 from "../Assets/crpr/05.png"
+import cr6 from "../Assets/crpr/06.png"
+import cr7 from "../Assets/crpr/07.png"
+import cr8 from "../Assets/crpr/08.png"
+import cr9 from "../Assets/crpr/09.png"
+import cr10 from "../Assets/crpr/10.png"
+import cr11 from "../Assets/crpr/11.png"
+import cr12 from "../Assets/crpr/12.png"
+import cr13 from "../Assets/crpr/13.png"
+
+import dm1 from "../Assets/digital/01.png"
+import dm2 from "../Assets/digital/02.png"
+import l1 from "../Assets/logistics/01.png"
+import l2 from "../Assets/logistics/02.png"
+import l3 from "../Assets/logistics/03.png"
+import l4 from "../Assets/logistics/04.png"
+import l5 from "../Assets/logistics/05.png"
+import l6 from "../Assets/logistics/06.png"
+import l7 from "../Assets/logistics/07.png"
 
 
+import mr1 from "../Assets/marketing/01.png"
+import mr2 from "../Assets/marketing/02.png"
+import mr3 from "../Assets/marketing/03.png"
+import mr4 from "../Assets/marketing/04.png"
+import mr5 from "../Assets/marketing/05.png"
+import mr6 from "../Assets/marketing/06.png"
+import mr7 from "../Assets/marketing/07.png"
+import mr8 from "../Assets/marketing/08.png"
+import mr9 from "../Assets/marketing/09.png"
+import mr10 from "../Assets/marketing/10.png"
+import mr11 from "../Assets/marketing/11.JPG"
 
-
-
+import p1 from "../Assets/photography/01.png"
+import p2 from "../Assets/photography/02.png"
+import p3 from "../Assets/photography/03.jpg"
+import w1 from "../Assets/web/01.png"
+import w2 from "../Assets/web/02.png"
+import w3 from "../Assets/web/03.png"
 // CSS
 import "./about.css"
 
@@ -49,9 +89,6 @@ const About = () => {
 
   const domains = ["Core", "Content", "Design", "CR/PR", "Digital Marketing", "Logistics", "Marketing", "Photography", "Web"]
   const [active, setActive] = useState(0);
-
-  // const increament = () => setActive(active + 1)
-  // const decreament = () => setActive(active - 1)
 
   const checkActive = (e) => {
     setActive(e);
@@ -79,7 +116,7 @@ const About = () => {
           <div className='mt-2'>
             <div className="flex gap-x-1 md:gap-x-2 w-[100%] items-center justify-start flex-wrap">
               <h4 className='member-name text-md text-[#000000] font-semibold tracking-wider md:text-xl'>{props.name}</h4>
-              <a href={props.linkedin} target="_blank" rel="noreferrer">
+              <a style={{ display: props.linkedin ? "block" : "none" }} href={props.linkedin} target="_blank" rel="noreferrer">
                 <img className='w-5 md:w-8 sm:w-6' src={linkedin} alt="linkedin" />
               </a>
             </div>
@@ -158,16 +195,15 @@ const About = () => {
               </a>
 
 
-              <a href='https://luvieessentials.com' rel="noopener noreferrer" target="_blank">
-                <img className='text-center w-[137px] md:w-[310px]' src={sponser5} alt="" />
-
-              </a>
-            </div>
-            <div className='flex gap-x-10 mt-2'>
               <a href='https://www.instagram.com/amprint.india/' rel="noopener noreferrer" target="_blank">
                 <img className='w-[163px] md:w-[290px]' src={sponsor7} alt="" />
               </a>
             </div>
+            {/* <div className='flex gap-x-10 mt-2'>
+              <a href='https://www.instagram.com/amprint.india/' rel="noopener noreferrer" target="_blank">
+                <img className='w-[163px] md:w-[290px]' src={sponsor7} alt="" />
+              </a>
+            </div> */}
           </div>
         </div>
         {/* <div className='w-[90%] h-[100%] overflow-x-hidden mx-auto'>
@@ -248,12 +284,11 @@ const About = () => {
             <Member name="Akash Meka" role="CO-ORGANIZER" photo={akash} linkedin="https://www.linkedin.com/in/akash-meka-1a0861194" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="" photo={member} linkedin="" />
-            <Member name="John Doe" role="" photo={member} linkedin="" />
-            <Member name="John Doe" role="" photo={member} linkedin="" />
-            <Member name="John Doe" role="" photo={member} linkedin="" />
-            <Member name="John Doe" role="" photo={member} linkedin="" />
+          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7  2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="John Doe" role="" photo={c1} linkedin="" />
+            <Member name="John Doe" role="" photo={c2} linkedin="" />
+            <Member name="John Doe" role="" photo={c3} linkedin="" />
+            <Member name="John Doe" role="" photo={c4} linkedin="" />
           </div> */}
 
         </div>
@@ -264,13 +299,12 @@ const About = () => {
             <Member name="Gaurang R" role="CO-HEAD" photo={gaurang} linkedin="https://www.linkedin.com/in/gaurang-ratnaparkhi-599964232" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="Rithika N" role="" photo={c1} linkedin="https://www.linkedin.com/in/rithika-n-792224246" />
+            <Member name="Nishkarsh Sharma" photo={c2} linkedin="https://www.linkedin.com/in/nishkarsh-sharma-18958624b" />
+            <Member name="Sri Charan Reddy" role="" photo={c3} linkedin="https://www.linkedin.com/in/sricharan-reddy-chilkuri-082723235" />
+            <Member name="Pooja Sunkara" role="" photo={c4} linkedin="https://www.linkedin.com/in/pooja-sunkara-159a00230" />
+          </div>
 
         </div>
         <div style={{ display: active === 2 ? "" : "none" }} >
@@ -280,13 +314,14 @@ const About = () => {
             <Member name="Mamtha P" role="CO-HEAD" photo={mamtha} linkedin="https://www.linkedin.com/in/mamtha-patalay/" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member photo={d1} />
+            <Member name="Mythri Borra" photo={d2} linkedin="https://www.linkedin.com/in/mythri-borra-87653721b" />
+            <Member name="Riktha Reddy" photo={d3} linkedin="https://www.linkedin.com/in/riktha-reddy-024b01221/" />
+            <Member name="Y Rohit Reddy" photo={d4} linkedin="https://www.linkedin.com/in/rohit-reddy-yerva-308513245" />
+
+
+          </div>
 
         </div>
         <div style={{ display: active === 3 ? "" : "none" }}>
@@ -296,13 +331,25 @@ const About = () => {
             <Member name="Amuktha K" role="CO-HEAD" photo={amuktha} linkedin="https://www.linkedin.com/in/amuktha-kotamsetty-5814b9104/" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="Kausthub Samavedam" photo={cr1} linkedin="https://www.linkedin.com/in/kausthub-samavedam-03369a246" />
+            <Member name="Om Sree Harsha" photo={cr2} linkedin="https://www.linkedin.com/in/om-sree-harsha-267865209" />
+            <Member name="Sonith Yadav " photo={cr3} linkedin="https://www.linkedin.com/in/sonith-yadav-5a6212263" />
+            <Member name="Srinidhi Challa" photo={cr4} linkedin="https://www.linkedin.com/in/srinidhi-challa-516625229" />
+            <Member name="Vaahnitha Chowdary" photo={cr5} linkedin="https://www.linkedin.com/in/vaahnitha-chowdary-chinthalapudi-0b1251227" />
+            <Member name="Abbu Baker " photo={cr6} linkedin="https://www.linkedin.com/in/abbubaker-siddiqi-4a073b22a" />
+            <Member name="R.Yagnay Pratheek" photo={cr7} linkedin="https://www.linkedin.com/in/ramagiri-yagnay-pratheek-454327246" />
+            <Member name="Rishita Achanta" photo={cr8} linkedin="http://www.linkedin.com/in/rishita-achanta" />
+            <Member name="Suhruth Inakollu " photo={cr9} linkedin="https://www.linkedin.com/in/venkatasaisuhruth" />
+            <Member name="Nayan Kanaparthi" photo={cr10} linkedin="https://www.linkedin.com/in/nayan-kanaparthi-7383a2183/" />
+            <Member name="Rishi Kolluru" photo={cr11} linkedin="" />
+            <Member name="Hrushikesh Dokala" photo={cr12} linkedin="https://www.linkedin.com/in/hrushikesh-d-a9a570241" />
+            <Member name="Bhagya Chandra Raj" photo={cr13} linkedin="https://www.linkedin.com/in/bhagya-961026229" />
+
+
+
+
+          </div>
 
         </div>
         <div style={{ display: active === 4 ? "" : "none" }}>
@@ -312,13 +359,10 @@ const About = () => {
             <Member name="Niharika B" role="CO-HEAD" photo={niharika} linkedin="https://www.linkedin.com/in/niharika-buddaraju-95a165260/" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="Aditi Deekshita Pallay" photo={dm1} linkedin="http://www.linkedin.com/in/pallayaditideekshita" />
+            <Member name="Ch Sai Sahitya" photo={dm2} linkedin="https://www.linkedin.com/in/ch-sahitya-b8483421a" />
+          </div>
 
         </div>
 
@@ -329,13 +373,17 @@ const About = () => {
             <Member name="Abhishek K" role="CO-HEAD" photo={abhishek} linkedin="https://www.linkedin.com/in/abhishek-kokkonda-1361041b0" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="P.Jai Krishnudu" photo={l1} linkedin="https://www.linkedin.com/in/jai-krishnudu-b39a34248/" />
+            <Member name="Sai manish" photo={l2} linkedin="https://www.linkedin.com/in/sai-manish-thota-61a89a1a5" />
+            <Member name="Bindhiya Upputuri" photo={l3} linkedin="https://www.linkedin.com/in/bindhiya-upputuri-9884211a9" />
+            <Member name="Devamsh Vetcha" photo={l4} linkedin="https://www.linkedin.com/in/devamshvetcha" />
+            <Member name="Lokesh Chandra" photo={l5} linkedin="https://www.linkedin.com/in/parchuri-lokesh-chandra-6505661b2/" />
+            <Member name="Hema Harshini" photo={l6} linkedin="https://www.linkedin.com/in/e-hema-harshini-65806a228" />
+            <Member name="Saif Akbari" photo={l7} linkedin="http://linkedin.com/in/saif-akbari-928b65259" />
+
+
+          </div>
 
         </div>
 
@@ -345,13 +393,20 @@ const About = () => {
             <Member name="Manoj Sharma" role="CO-HEAD" photo={manoj} linkedin="https://www.linkedin.com/in/mvns-manoj-8148a21a5" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="Harshit Tekumalla" photo={mr1} linkedin="https://www.linkedin.com/in/harshit-tekumalla-537716236" />
+            <Member name="Srihimamshu Marripalepu" photo={mr2} linkedin="https://www.linkedin.com/in/srihimamshu-marripalepu-75477b255/" />
+            <Member photo={mr3} linkedin="" />
+            <Member name="Ram mohan" photo={mr4} linkedin="https://www.linkedin.com/in/rammohan-akula-644351196" />
+            <Member name="Nandini Kongani" photo={mr5} linkedin="https://www.linkedin.com/in/nandini-kongani-3294601b2" />
+            <Member name="Aashish Kumar" photo={mr6} linkedin="https://www.linkedin.com/in/aashish-kumar-878ba0252" />
+            <Member name="Sai Karthik" photo={mr7} linkedin={false} />
+            <Member name="Harshini Munagala" photo={mr8} linkedin="https://www.linkedin.com/in/harshini-munagala-9403b4201" />
+            <Member name="Akshaya Ravva" photo={mr9} linkedin="https://www.linkedin.com/in/akshaya-rava-610a80227" />
+            <Member name="Nayan Kanaparthi" photo={mr10} linkedin="https://www.linkedin.com/in/nayan-kanaparthi-7383a2183/" />
+            <Member name="Prathna Savadia" photo={mr11} linkedin="https://www.linkedin.com/in/prathna-savadia-670b3b262" />
+
+          </div>
 
         </div>
 
@@ -362,13 +417,13 @@ const About = () => {
             <Member name="Hemanth N" role="CO-HEAD" photo={naidu} linkedin="https://www.linkedin.com/in/hemanth-naidu-7b1b301a4/" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="Shakir Farhan" photo={w1} linkedin="https://www.linkedin.com/in/shak1rfarhan" />
+            <Member name="Chilkuri Riktha Reddy" photo={w2} linkedin="https://www.linkedin.com/in/riktha-reddy-024b01221/" />
+            <Member name="Adarsh Pandey" photo={w3} linkedin="https://www.linkedin.com/in/adarsh-pandey-379a1b21a/" />
+            <Member name="Y Rohit Reddy" photo={p1} linkedin="https://www.linkedin.com/in/rohit-reddy-yerva-308513245" />
+
+          </div>
 
         </div>
 
@@ -379,13 +434,11 @@ const About = () => {
             <Member name="Vamsi Krishna" role="CO-HEAD" photo={vamsi} linkedin="https://www.linkedin.com/in/vamshi-krishna-978bb6207" />
           </div>
 
-          {/* <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-            <Member name="John Doe" role="ORGANIZER" photo={member} linkedin="" />
-          </div> */}
+          <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
+            <Member name="Y Rohit Reddy" photo={p1} linkedin="https://www.linkedin.com/in/rohit-reddy-yerva-308513245" />
+            <Member name="Sudhamsh Dosapati" photo={p2} linkedin="https://www.linkedin.com/in/sudhamsh-dosapati-713984224" />
+            <Member name="S Ashwin Kumar" photo={p3} linkedin="https://www.linkedin.com/in/ashwin-srdy" />
+          </div>
 
         </div>
       </section>
