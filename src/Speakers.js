@@ -1,6 +1,6 @@
 import sri from "./Assets/sri.jfif";
 import pound from "./Assets/pound kakkar.png";
-import arun from "./Assets/arun krishnamurthy.png";
+import prasad from "./Assets/Prasad Viswanathan.png";
 import ajay from "./Assets/Ajay.png";
 import divya from "./Assets/Divya Boppana.png"
 import sailesh from "./Assets/sailesh.png";
@@ -25,10 +25,10 @@ const speakers = [
   },
   {
     id: 3,
-    name: "Arun Krishnamurthy",
-    role: "Environmentalist",
-    linkedin: "https://www.linkedin.com/in/arun-krishnamurthy-e-f-i-54a9a26/",
-    image: arun,
+    name: "Sai Prasad Viswanathan",
+    role: "Polar Explorer",
+    instagram: "https://www.instagram.com/happy.blissfull/?hl=en",
+    image: prasad,
   },
   {
     id: 4,
