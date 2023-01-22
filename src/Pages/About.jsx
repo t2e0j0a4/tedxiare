@@ -72,6 +72,7 @@ import mr8 from "../Assets/marketing/08.png"
 import mr9 from "../Assets/marketing/09.png"
 import mr10 from "../Assets/marketing/10.png"
 import mr11 from "../Assets/marketing/11.png"
+import mr12 from "../Assets/marketing/12.png"
 
 import p1 from "../Assets/photography/01.png"
 import p2 from "../Assets/photography/02.png"
@@ -315,7 +316,7 @@ const About = () => {
           </div>
 
           <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member photo={d1} />
+            <Member name="Shruti T" linkedin="https://www.linkedin.com/in/thumu-sruthi-1577a1236" photo={d1} />
             <Member name="Mythri Borra" photo={d2} linkedin="https://www.linkedin.com/in/mythri-borra-87653721b" />
             <Member name="Riktha Reddy" photo={d3} linkedin="https://www.linkedin.com/in/riktha-reddy-024b01221/" />
             <Member name="Y Rohit Reddy" photo={d4} linkedin="https://www.linkedin.com/in/rohit-reddy-yerva-308513245" />
@@ -396,15 +397,17 @@ const About = () => {
           <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
             <Member name="Harshit Tekumalla" photo={mr1} linkedin="https://www.linkedin.com/in/harshit-tekumalla-537716236" />
             <Member name="Srihimamshu Marripalepu" photo={mr2} linkedin="https://www.linkedin.com/in/srihimamshu-marripalepu-75477b255/" />
-            <Member photo={mr3} linkedin="" />
+            <Member name="Yalala Sirish Reddy" photo={mr3} linkedin="https://www.linkedin.com/in/sirish-reddy-yalala-9138b01a5" />
             <Member name="Ram mohan" photo={mr4} linkedin="https://www.linkedin.com/in/rammohan-akula-644351196" />
             <Member name="Nandini Kongani" photo={mr5} linkedin="https://www.linkedin.com/in/nandini-kongani-3294601b2" />
             <Member name="Aashish Kumar" photo={mr6} linkedin="https://www.linkedin.com/in/aashish-kumar-878ba0252" />
-            <Member name="Sai Karthik" photo={mr7} linkedin={false} />
+            <Member name="Sai Karthik" photo={mr7} />
             <Member name="Harshini Munagala" photo={mr8} linkedin="https://www.linkedin.com/in/harshini-munagala-9403b4201" />
             <Member name="Akshaya Ravva" photo={mr9} linkedin="https://www.linkedin.com/in/akshaya-rava-610a80227" />
             <Member name="Nayan Kanaparthi" photo={mr10} linkedin="https://www.linkedin.com/in/nayan-kanaparthi-7383a2183/" />
             <Member name="Prathna Savadia" photo={mr11} linkedin="https://www.linkedin.com/in/prathna-savadia-670b3b262" />
+            <Member name="Sree Harshita Maddiapti" photo={mr12} linkedin="https://www.linkedin.com/in/harshita-maddipati-18678922a/" />
+
 
           </div>
 
