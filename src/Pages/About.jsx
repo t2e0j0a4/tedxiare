@@ -116,7 +116,7 @@ const About = () => {
           </div>
           <div className='mt-2'>
             <div className="flex w-[100%]  flex-wrap">
-              <h4 className='member-name text-md text-[#000000] font-semibold tracking-wider md:text-xl'>{props.name}</h4>
+              <h4 className='member-name w-[93%] text-md text-[#000000] font-semibold tracking-wider md:text-xl'>{props.name}</h4>
               <a className={`${props.linkedin ? "block" : "hidden"} absolute top-1 left-[3px] `} href={props.linkedin} target="_blank" rel="noreferrer">
                 <img className='w-5 md:w-8 sm:w-6' src={linkedin} alt="linkedin" />
               </a>
@@ -422,7 +422,7 @@ const About = () => {
 
           <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
             <Member name="Shakir Farhan" photo={w1} linkedin="https://www.linkedin.com/in/shak1rfarhan" />
-            <Member name="Chilkuri Riktha Reddy" photo={w2} linkedin="https://www.linkedin.com/in/riktha-reddy-024b01221/" />
+            <Member name="Riktha Reddy" photo={w2} linkedin="https://www.linkedin.com/in/riktha-reddy-024b01221/" />
             <Member name="Adarsh Pandey" photo={w3} linkedin="https://www.linkedin.com/in/adarsh-pandey-379a1b21a/" />
             <Member name="Y Rohit Reddy" photo={p1} linkedin="https://www.linkedin.com/in/rohit-reddy-yerva-308513245" />
 
