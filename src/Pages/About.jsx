@@ -343,7 +343,7 @@ const About = () => {
             <Member name="Rishita Achanta" photo={cr8} linkedin="http://www.linkedin.com/in/rishita-achanta" />
             <Member name="Suhruth Inakollu " photo={cr9} linkedin="https://www.linkedin.com/in/venkatasaisuhruth" />
             <Member name="Nayan Kanaparthi" photo={cr10} linkedin="https://www.linkedin.com/in/nayan-kanaparthi-7383a2183/" />
-            <Member name="Rishi Kolluru" photo={cr11} linkedin="" />
+            <Member name="Rishi Kolluru" photo={cr11} linkedin="https://www.linkedin.com/in/rishi-kolluru-a34346155" />
             <Member name="Hrushikesh Dokala" photo={cr12} linkedin="https://www.linkedin.com/in/hrushikesh-d-a9a570241" />
             <Member name="Bhagya Chandra Raj" photo={cr13} linkedin="https://www.linkedin.com/in/bhagya-961026229" />
 
