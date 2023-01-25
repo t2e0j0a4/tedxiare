@@ -9,33 +9,33 @@ import sneha from "./Assets/Sneha Tulluri.png"
 const speakers = [
   {
     id: 1,
-    name: "Sri Charan Lakkaraju",
-    role: "Founder, stuMagz",
-    linkedin:
-      "https://www.linkedin.com/in/sricharanlakkaraju/?originalSubdomain=in",
-    instagram: "https://www.instagram.com/charanlakkaraju/",
-    image: sri,
-  },
-  {
-    id: 2,
-    name: "Pound Kakar",
-    role: "Professional Pole Dancer",
-    instagram: "https://www.instagram.com/kakarpound_pole/",
-    image: pound,
-  },
-  {
-    id: 3,
-    name: "Sai Prasad Viswanathan",
-    role: "Polar Explorer",
-    instagram: "https://www.instagram.com/happy.blissfull/?hl=en",
-    image: prasad,
-  },
-  {
-    id: 4,
     name: "Ajay aka Aye Jude",
     role: "Pilot, Entrepreneur & Fashion Influencer",
     instagram: "https://www.instagram.com/ajayfromayejude/",
     image: ajay,
+  },
+  {
+    id: 2,
+    name: "Sai Prasad Viswanathan",
+    role: "Polar Explorer",
+    instagram: "https://www.instagram.com/happy.blissfull/?hl=en",
+    linkedin: "https://www.linkedin.com/in/sprasadv/",
+    image: prasad,
+  },
+  {
+    id: 3,
+    name: "Sri Charan Lakkaraju",
+    role: "Founder, stuMagz",
+    linkedin: "https://www.linkedin.com/in/sricharanlakkaraju/?originalSubdomain=in",
+    instagram: "https://www.instagram.com/charanlakkaraju/",
+    image: sri,
+  },
+  {
+    id: 4,
+    name: "Pound Kakar",
+    role: "Professional Pole Dancer",
+    instagram: "https://www.instagram.com/kakarpound_pole/",
+    image: pound,
   },
   {
     id: 5,

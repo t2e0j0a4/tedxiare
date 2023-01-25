@@ -12,7 +12,7 @@ const Schedule = (props) => {
         </span>
       </div>
       <div className="flex w-[100%] flex-row items-center justify-end">
-        <div className=" w-[24px] h-[20px] sm:w-[30px] sm:h-[30px] bg-[#EB0028] rounded-[50%] shadow-md border-[4px] border-gray-50"></div>
+        <div className=" w-[34px] sm:w-[30px] h-[30px] bg-[#EB0028] rounded-[50%] shadow-md border-[4px] border-gray-50"></div>
         <div className="w-[380px] h-[2px] bg-[#0B0B0B]"></div>
       </div>
       <div className="w-[100%] flex items-center justify-center">
