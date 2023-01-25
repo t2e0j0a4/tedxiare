@@ -176,9 +176,27 @@ html {
   overflow-x: scroll;
 }
 
-.timetableOuter::-webkit-scrollbar {
-  display: none;
+@media only screen and (max-width : 450px) {
+  .timetableOuter::-webkit-scrollbar {
+    display: none;
+  }
+
+  .timetableWrapper {
+    height: 340px !important;
+  }
+
+  .eachSchedule {
+    width: 300px !important;
+  }
+
+  .session {
+    width: 90% !important;
+    font-size: 18px !important;
+  }
+
 }
+
+
 
 /* Timetable */
 
