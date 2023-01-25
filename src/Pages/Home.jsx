@@ -93,7 +93,7 @@ const Home = () => {
         {/* EVENTS SCHEDULE - TIMETABLE */}
         <section className='w-[100%] h-[100%] bg-[#ffffff] mt-4 mb-6'>
             <div className="w-[100%] flex justify-center items-center text-center mb-6">
-                <h1 className='text-[32px] sm:text-[48px] text-center font-[600] leading-[48px] md:leading-[72px] text-[#0B0B0B]'>SCHEDULED <span className='text-[#EB0028] tracking-wider'>TALKS</span></h1>
+                <h1 className='text-[32px] sm:text-[48px] text-center font-[600] sm:leading-[48px] md:leading-[72px] text-[#0B0B0B]'>SCHEDULED <span className='text-[#EB0028] tracking-wider'>TALKS</span></h1>
             </div>
             <div className="w-[100%] flex items-center justify-center">
                 <span className=' text-[18px] sm:text-[21px] font-[Poppins] text-center text-[#EB0028] tracking-wide font-bold'>TEDx<span className='text-[#0B0B0B]'>IARE presents to you, the Itinerary of the 26<sup>th</sup> January 2023!</span></span>
