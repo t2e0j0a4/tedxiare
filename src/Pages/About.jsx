@@ -28,6 +28,8 @@ import sponser3 from "../Assets/sponser-3.png";
 import sponser4 from "../Assets/sponser-4.png";
 import sponser6 from "../Assets/sponsor-6.png";
 import sponsor7 from "../Assets/sponsor-7.png";
+import sponsor8 from "../Assets/sponsor-8.png";
+
 import c1 from "../Assets/content/01.png"
 import c2 from "../Assets/content/02.png"
 import c3 from "../Assets/content/03.png"
@@ -200,11 +202,11 @@ const About = () => {
                 <img className='w-[163px] md:w-[290px]' src={sponsor7} alt="" />
               </a>
             </div>
-            {/* <div className='flex gap-x-10 mt-2'>
-              <a href='https://www.instagram.com/amprint.india/' rel="noopener noreferrer" target="_blank">
-                <img className='w-[163px] md:w-[290px]' src={sponsor7} alt="" />
+            <div className='flex gap-x-10 mt-2'>
+              <a href='https://www.monsterenergy.com/' rel="noopener noreferrer" target="_blank">
+                <img className='w-[163px] md:w-[290px]' src={sponsor8} alt="" />
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
         {/* <div className='w-[90%] h-[100%] overflow-x-hidden mx-auto'>
@@ -438,7 +440,7 @@ const About = () => {
           </div>
 
           <div className='categoryMembers md:ml-5 mt-6 grid grid-cols-4 gap-y-4 sm:grid-cols-5 sm:gap-y-6 md:grid-cols-5 md:gap-y-5 xl:grid-cols-6 xl:gap-y-6 2xl:grid-cols-7 2xl:gap-x-0 2xl:gap-y-6 justify-baseline pt-2'>
-            <Member name="Y Rohit Reddy" photo={p1} linkedin="https://www.linkedin.com/in/rohit-reddy-yerva-308513245" />
+
             <Member name="Sudhamsh Dosapati" photo={p2} linkedin="https://www.linkedin.com/in/sudhamsh-dosapati-713984224" />
             <Member name="S Ashwin Kumar" photo={p3} linkedin="https://www.linkedin.com/in/ashwin-srdy" />
           </div>
